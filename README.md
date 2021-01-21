@@ -7,32 +7,8 @@
 
 ![screenshot](https://raw.githubusercontent.com/raviriley/agency-jekyll-theme/master/screenshot.PNG)
 
->  :warning:  **Notice to those using legacy Formspree contact forms:** :warning: <br>
-Email-based forms are being [phased out](https://help.formspree.io/hc/en-us/articles/360056076314) by Formspree. [#11](https://github.com/raviriley/agency-jekyll-theme/pull/11) updated this theme to use the [new Formspree structure](https://help.formspree.io/hc/en-us/articles/360017735154-How-to-prevent-spam). Click [here](https://help.formspree.io/hc/en-us/articles/360056076314) for instructions on updating your site's form.
 
-
-This is the [Agency Bootstrap theme](https://startbootstrap.com/themes/agency/) converted to a gem-based Jekyll theme with GitHub Pages support. While this had been done before, ([here](https://github.com/y7kim/agency-jekyll-theme), [here](https://github.com/SotiriosVrachas/jekyll-theme-startbootstrap-agency), and [here](https://github.com/laklau/agency-jekyll-theme/)), these are outdated and have not been updated or maintained for years. I built this theme from the most recent Bootstrap source. I also added a lot of new features that go beyond the original theme's capabilities:
-
-- GitHub Pages support
-- [template repo][template] to get up and running in minutes
-- contact form functionality powered by [Formspree.io](https://formspree.io)
-- custom pages
-- 404 page
-- legal/Privacy Policy page
-- Google Analytics support
-- Markdown support
-- custom images
-- logo support (instead of just title text)
-- automatically updating copyright years
-- custom navigation bar, even without the header image(s)
-- customizable footer
-- custom accent color and dark/light colors
-- horizontal scrolling support for client section
-<!-- 
-- custom colors with automatic gradient generation (coming soon)
-- site title logo text font customization (coming soon)
-- horizontal scrolling support for portfolio section (coming soon)
-- about section (different from the timeline) -->
+This uses the [Agency Bootstrap theme](https://startbootstrap.com/themes/agency/) converted to a gem-based Jekyll theme with GitHub Pages support.
 
 The Jekyll structure of this theme includes:
 
@@ -41,7 +17,10 @@ The Jekyll structure of this theme includes:
 - `sitetext.yml` enables complete customization of all site text
 - `navigation.yml` enables fully customizable navigation
 - `style.yml` enables fully customizable colors, background images, and other style-related things
-
+- `_sass` - sass enabled style files
+- `_includes` - templates available for use in multiple files
+- `_layouts`
+- `assets` - asse
 
 **If you enjoy this theme, please consider [supporting me](https://www.paypal.me/raviriley) to continue developing and maintaining it.**
 
@@ -85,19 +64,6 @@ Replace the contents of your `_config.yml` file with [this](https://raw.githubus
 
 
 [template]: https://github.com/raviriley/agency-jekyll-theme-starter
-
-<!--
-## Documentation and Usage
-
-**TODO:** Write usage instructions here. Describe available layouts, includes, or assets.
-
-navheader is used only for the home page. nav is used everywhere else.
-
-Layouts:
-
-Includes:
-
--->
 
 ## Contributing
 
