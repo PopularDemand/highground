@@ -1,8 +1,8 @@
 header:
-    title: It's the META
-    text: High Ground
-    button: Elevate Your Influence
-    buttonlink: "#services"
+    title:
+    text: <div class="header-text">Studio<br>Designs<br>and<br>Community<div>
+    button:
+    buttonlink:
 
 services:
     title: "Services"
