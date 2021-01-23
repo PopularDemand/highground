@@ -2,17 +2,19 @@
 #mainNav {
   background-color: $primary;
   .navbar-toggler {
-    font-size: 12px;
+    font-size: 2em;
     right: 0;
     padding: 13px;
     text-transform: uppercase;
-    color: $primary;
+    color: $white;
     border: 0;
-    background-color: $secondary;
+    background-color: transparent;
     @include heading-font;
   }
   .navbar-brand {
-    color: $secondary;
+    color: $white;
+    font-size: 1.5em;
+    letter-spacing: .02em;
     @include script-font;
     &.active,
     &:active,
@@ -63,7 +65,7 @@
     &.navbar-shrink {
       padding-top: 0;
       padding-bottom: 0;
-      background-color: $gray-900;
+      background-color: $primary;
       .navbar-brand {
         font-size: 1.25em;
         padding: 12px 0;
