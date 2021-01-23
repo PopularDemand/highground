@@ -12,13 +12,16 @@ header.masthead {
   .intro-text {
     padding-top: calc(#{$approx-header-height} + 50px);
     padding-bottom: 50px;
+    width: fit-content;
+    text-align:center;
+    margin: auto;
+
     .intro-lead-in {
-      font-size: 22px;
-      font-style: italic;
+      font-size: 28px;
       color: white;
       line-height: 22px;
       margin-bottom: 25px;
-      @include serif-font;
+      @include script-font;
     }
     .intro-heading {
       font-size: 50px;
@@ -35,23 +38,27 @@ header.masthead {
       font-size: 22px;
       font-weight: bold;
       line-height: 22px;
+      letter-spacing: .5px;
       color: $white;
 
       @include heading-font;
     }
   }
 }
-@media(min-width:768px) {
+
+@media(min-width:892px) {
   header.masthead {
+    
     .intro-text {
       padding-top: 300px;
       padding-bottom: 200px;
+      margin-left: 0px;
+
       .intro-lead-in {
         font-size: 40px;
-        font-style: italic;
         line-height: 40px;
         margin-bottom: 25px;
-        @include serif-font;
+        @include script-font;
       }
       .intro-heading {
         font-size: 75px;
