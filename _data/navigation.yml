@@ -1,18 +1,19 @@
 nav:
   - title: "Services"
-    section: services
+    section: service-category-cards
 
-  - title: "Portfolio"
-    section: portfolio
+  # - title: "Portfolio"
+  #   section: portfolio
     
-  - title: "About"
-    section: timeline
+  # - title: "About"
+  #   section: timeline
 
-  - title: "Team"
-    section: team
+  # - title: "Team"
+  #   section: team
 
-  - title: "Contact"
+  - title: "Connect"
     section: contact
 
-  - title: "Theme Source"
-    url: https://github.com/raviriley/agency-jekyll-theme/
+  - title: iamalexbrady.com
+    url: https://iamalexbrady.com
+    alt-design: true

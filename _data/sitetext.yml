@@ -27,14 +27,14 @@ service_categories:
     - title: For Digital Creatives
       short_desc: Social Network for Digital Creatives
       long_desc:
-      image: assets/img/service_categories/taco_tuesday_iaab.jpg
+      image: assets/img/service_categories/the_werx.jpg
       page:
       service_category_slug: community
     
     - title: Shop Our Designs
       short_desc: Gifts available at LovesPresents.com
       long_desc:
-      image: assets/img/service_categories/taco_tuesday_iaab.jpg
+      image: assets/img/service_categories/loves_presents.png
       page:
       service_category_slug: community
 
