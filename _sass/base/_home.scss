@@ -1,0 +1,12 @@
+/* Also see legacy _page.scss for applicable styles */
+
+.home {
+    .bg-dark {
+        color: $white;
+        background-color: $black !important;
+    }
+
+    .text-muted {
+        color: $gray-300;
+    }
+}

@@ -4,7 +4,7 @@
       <div class="row">
         <div class="col-lg-12 text-center">
           <h2 class="section-heading text-uppercase">{{ site.data.sitetext.contact.title | markdownify | default: Contact Us }}</h2>
-          <h3 class="section-subheading text-muted">{{ site.data.sitetext.contact.text | default: "" }}</h3>
+          <h3 class="section-subheading">{{ site.data.sitetext.contact.text | default: "" }}</h3>
         </div>
       </div>
       <div class="row">
@@ -22,7 +22,7 @@
                   <p class="help-block text-danger"></p>
                 </div>
                 <div class="form-group">
-                  <input name="phone" class="form-control" id="phone" type="tel" placeholder="Phone Number*" required="required" data-validation-required-message="Please enter your phone number.">
+                  <input name="phone" class="form-control" id="phone" type="tel" placeholder="Phone Number" data-validation-required-message="Please enter your phone number.">
                   <p class="help-block text-danger"></p>
                 </div>
               </div>

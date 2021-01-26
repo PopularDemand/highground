@@ -19,6 +19,10 @@ a {
   color: $primary !important;
 }
 
+.splash-color {
+  color: $secondary;
+}
+
 h1,
 h2,
 h3,
@@ -46,6 +50,10 @@ button, .btn {
     }
   }
 
+  .title-row {
+    margin-bottom: 75px;
+  }
+
   h2.section-heading {
     font-size: 40px;
     margin-top: 0;
@@ -56,7 +64,7 @@ button, .btn {
     font-size: 16px;
     font-weight: 400;
     font-style: italic;
-    margin-bottom: 75px;
+    margin-bottom: 75px; // todo: wrap all heading/subheadin in title-row
     text-transform: none;
     @include serif-font;
   }

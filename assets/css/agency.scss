@@ -17,6 +17,7 @@ $contact-image: "{{ site.data.style.contact-image }}";
 
 // Global CSS
 @import "base/page.scss";
+@import "base/home.scss";
 @import "base/utilities.scss";
 
 // Components
@@ -33,3 +34,4 @@ $contact-image: "{{ site.data.style.contact-image }}";
 @import "includes/contact.scss";
 @import "includes/footer.scss";
 @import "includes/calls_to_action.scss";
+@import "includes/service_categories.scss";
