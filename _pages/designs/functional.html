@@ -1,0 +1,34 @@
+---
+permalink: /designs/functional
+layout: page_with_jumbo_header
+---
+
+{% assign header_title = site.data.functional_designs.site_text.header.title %}
+{% comment %}
+{% assign header_text = site.data.functional_designs.site_text.header.text %}
+{% assign header_subtext = site.data.functional_designs.site_text.header.subtext %}
+{% assign header_button = site.data.functional_designs.site_text.header.button %}
+{% assign header_button_link = site.data.functional_designs.site_text.header.button_link %}
+{% endcomment %}
+
+<div class="designs">
+    {% include nav.html %}
+    {% include jumbo_header.html
+        title=header_title
+        text=header_text
+        subtext=header_subtext
+        button_text=header_button
+        button_link=header_button_link
+    %}
+
+    <div class="container">
+    {% for c in site.data.functional_designs.collections %}
+    {{ c.title }}<br>
+    {{ c.description }}<br>
+
+    {% for i in c.images %}
+    {{ i.description }}<br>
+    {% endfor %}
+    {%endfor %}
+    </div>
+</div>

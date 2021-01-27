@@ -1,6 +1,6 @@
 header:
-  title: <span>&mdash; alex brady's &mdash;</span>
-  text: <div class="header-text">Design<br>Studio<div>
+  pretext: <span>&mdash; alex brady's &mdash;</span>
+  title: <div class="header-text">Design<br>Studio<div>
   subtext: Art &bull; Business &bull; Community
   button:
   buttonlink:

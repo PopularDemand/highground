@@ -20,3 +20,8 @@ collections:
         description: Site banner for purpose page
       - filename: red_gold_favicon.png
         description: Favicon
+
+site_text:
+  header:
+    title: <div>Functional</div>
+    background_img:
