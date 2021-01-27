@@ -18,7 +18,7 @@ service_categories:
       service_category_slug: aesthetic
       
     - title: Functional Designs
-      short_desc: Business Graphics and Illustrations
+      short_desc: Business Graphics
       long_desc:
       image: assets/img/service_categories/oneself_dotdash_logos.jpg
       page:
@@ -153,7 +153,7 @@ team:
           
 contact:
   title: "Connect"
-  text: "Can we help with your next project?<br>Reach us to commision designs or access our Network"
+  text: "Can we help with your next project?<br>Reach us for commisioning or for access to our Network of Designers."
   section: contact
     
 footer:

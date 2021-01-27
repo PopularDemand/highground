@@ -1,0 +1,22 @@
+directory: assets/img/functional_designs
+
+collections:
+  - title: One Self
+    type: Logo, Web UI
+    description: Graphical interface for One Self social network
+    directory: 
+    images:
+      - filename: circle_s_yellow_red_red.png
+        description: Flat color logo
+      - filename: circle_s_gold_red.png
+        description: Partial transparancy logo
+      - filename: gold_on_black_separate_os.png
+        description: Alternate coloring
+      - filename: one_self_gold_on_gray.png
+        description: Wordmark in alternate coloring
+      - filename: avatar_yellow_red.jpg
+        description: Generic user avatar in primary colors
+      - filename: purpose_banner_2.png
+        description: Site banner for purpose page
+      - filename: red_gold_favicon.png
+        description: Favicon
