@@ -1,6 +1,6 @@
 ---
 permalink: /designs/functional
-layout: page_with_jumbo_header
+layout: page_with_masthead
 ---
 
 {% assign header_title = site.data.functional_designs.site_text.header.title %}
@@ -13,7 +13,7 @@ layout: page_with_jumbo_header
 
 <div class="designs">
     {% include nav.html %}
-    {% include jumbo_header.html
+    {% include masthead.html
         title=header_title
         text=header_text
         subtext=header_subtext
