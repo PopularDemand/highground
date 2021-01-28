@@ -1,0 +1,63 @@
+// Global styling for this template
+body {
+  overflow-x: hidden;
+  @include body-font;
+  // padding-top: $approx-header-height-desktop;
+
+  @media only screen and (max-width: 991px) {
+    padding-top: $approx-header-height-mobile;
+  }
+}
+
+p {
+  line-height: 1.75;
+}
+
+a {
+  color: $primary;
+  text-decoration: underline;
+  &:hover {
+    color: darken($primary, 10%);
+  }
+}
+
+.text-primary {
+  color: $primary !important;
+}
+
+.splash-color {
+  color: $secondary;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  @include heading-font;
+}
+
+button, .btn {
+  border-radius: 0;
+}
+
+// Highlight color customization
+::-moz-selection {
+  background: $primary;
+  text-shadow: none;
+}
+
+::selection {
+  background: $primary;
+  text-shadow: none;
+}
+
+img::selection {
+  background: transparent;
+}
+
+img::-moz-selection {
+  background: transparent;
+}

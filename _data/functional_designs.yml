@@ -1,5 +1,5 @@
 directory: assets/img/functional_designs
-description: <div>Functional designs are productions made for use in internet, application, or visual presentation formats.</div> <div>Small business, entrepreneurs, and seeking to develop an online presence? Need help producing a visually cohesive brand or filling in your website? We offer <a href="/designs">Logo and Web Interface</a> service bundles.</div>
+description: <p>Functional designs are productions made for use in internet, application, or visual presentation formats.</p> <p>Small business, entrepreneurs, and seeking to develop an online presence? Need help producing a visually cohesive brand or filling in your website? We offer <a href="/designs" class="highlight-link">Logo and Web Interface</a> service bundles.</p>
 
 collections:
   - title: One Self

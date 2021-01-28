@@ -1,96 +1,39 @@
-// Global styling for this template
-body {
-  overflow-x: hidden;
-  @include body-font;
-  // padding-top: $approx-header-height-desktop;
+.standard-page {
+    .page-section {
+        padding: $page-spacing-sm;
+        &:first-child {
+            padding-top: $page-spacing-sm * 2;
+        }
 
-  @media only screen and (max-width: 991px) {
-    padding-top: $approx-header-height-mobile;
-  }
-}
+        @media(min-width:768px) {
+            padding: $page-spacing-md 0;
+            &:first-child {
+                padding-top: $page-spacing-md * 2;
+            }
+        }
 
-p {
-  line-height: 1.75;
-}
+        .highlight-link {
+            font-weight: bold;
+            padding: 0 .25em;
+        }
 
-a {
-  color: $primary;
-  &:hover {
-    color: darken($primary, 10%);
-  }
-}
+        .section-heading-row {
+            margin-bottom: 75px;
+        }
 
-.text-primary {
-  color: $primary !important;
-}
+        h2.section-heading {
+            font-size: 40px;
+            margin-top: 0;
+            margin-bottom: $page-spacing-sm;
+        }
 
-.splash-color {
-  color: $secondary;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-weight: 700;
-  @include heading-font;
-}
-
-button, .btn {
-  border-radius: 0;
-}
-
-.page-section {
-  padding: 100px 0;
-  @media(min-width:768px) {
-    padding: 150px 0;
-  }
-
-  &.section-slim {
-    padding: 50px 0;
-    @media(min-width:768px) {
-      padding: 100px 0;
+        h3.section-subheading {
+            font-size: 16px;
+            font-weight: 400;
+            font-style: italic;
+            margin-bottom: 75px;
+            text-transform: none;
+            @include serif-font;
+        }
     }
-  }
-
-  .title-row {
-    margin-bottom: 75px;
-  }
-
-  h2.section-heading {
-    font-size: 40px;
-    margin-top: 0;
-    margin-bottom: 15px;
-  }
-  
-  h3.section-subheading {
-    font-size: 16px;
-    font-weight: 400;
-    font-style: italic;
-    margin-bottom: 75px; // todo: wrap all heading/subheadin in title-row
-    text-transform: none;
-    @include serif-font;
-  }
-}
-
-
-// Highlight color customization
-::-moz-selection {
-  background: $primary;
-  text-shadow: none;
-}
-
-::selection {
-  background: $primary;
-  text-shadow: none;
-}
-
-img::selection {
-  background: transparent;
-}
-
-img::-moz-selection {
-  background: transparent;
 }
