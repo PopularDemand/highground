@@ -22,13 +22,18 @@ layout: page_with_masthead
     %}
 
     <div class="container">
-    {% for c in site.data.functional_designs.collections %}
-    {{ c.title }}<br>
-    {{ c.description }}<br>
+        <div class="row page-">
+            <div class="col col-xs-12">
+                {{ site.data.functional_designs.description }}
+            </div>
+        </div>
+        {% for c in site.data.functional_designs.collections %}
+        {{ c.title }}<br>
+        {{ c.description }}<br>
 
-    {% for i in c.images %}
-    {{ i.description }}<br>
-    {% endfor %}
-    {%endfor %}
+        {% for i in c.images %}
+        {{ i.description }}<br>
+        {% endfor %}
+        {%endfor %}
     </div>
 </div>

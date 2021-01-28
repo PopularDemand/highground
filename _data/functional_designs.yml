@@ -1,10 +1,11 @@
 directory: assets/img/functional_designs
+description: <div>Functional designs are productions made for use in internet, application, or visual presentation formats.</div> <div>Small business, entrepreneurs, and seeking to develop an online presence? Need help producing a visually cohesive brand or filling in your website? We offer <a href="/designs">Logo and Web Interface</a> service bundles.</div>
 
 collections:
   - title: One Self
     type: Logo, Web UI
     description: Graphical interface for One Self social network
-    directory: 
+    directory: oneself
     images:
       - filename: circle_s_yellow_red_red.png
         description: Flat color logo
