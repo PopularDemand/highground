@@ -10,33 +10,26 @@ service_categories:
   section_subtitle:
   section_id: service_categories #html section id
   list:
-    - title: Aesthetics
+    - title: The Aesthetic
       short_desc: Artwork and Decor
       long_desc:
       image: assets/img/service_categories/taco_tuesday_iaab.jpg
       page:
-      service_category_slug: aesthetic
+      service_page_id: aesthetic_designs
       
-    - title: Functional Designs
+    - title: The Functional
       short_desc: Business Graphics
       long_desc:
       image: assets/img/service_categories/oneself_dotdash_logos.jpg
       page:
-      service_category_slug: functional
+      service_page_id: functional_designs
         
-    - title: For Digital Creatives
+    - title: The Community
       short_desc: Social Network for Digital Creatives
       long_desc:
       image: assets/img/service_categories/the_werx.jpg
       page:
-      service_category_slug: community
-    
-    - title: Shop Our Designs
-      short_desc: Gifts available at LovesPresents.com
-      long_desc:
-      image: assets/img/service_categories/loves_presents.png
-      page:
-      service_category_slug: community
+      service_page_id: community
 
 services:
   title: "Services"

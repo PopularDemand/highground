@@ -1,12 +1,3 @@
-<!-- variables -->
-{% for page in site.pages %}
-  {% if page.external_id == "functional_designs" %}
-    {% assign functional_url = page.url %}
-  {% elsif page.external_id == "aesthetic_designs" %}
-    {% assign aesthetic_url = page.url %}
-  {% endif %}
-{% endfor %}
-
 <!-- service category -->
 <section class="page-section bg-dark" id="{{ site.data.sitetext.servce_categories.section | default: "service-category-cards" }}">
   <div class="container">
@@ -30,14 +21,9 @@
 
     <!-- Cards -->
     <div class="row">
-      {% for category in site.data.sitetext.service_categories.list %}
-
-      <!-- Get page to be linked to -->
-      {% assign service_page = site.pages | where: "external_id", category.service_page_id | first %}
-
-      <!-- Content -->
+	    {% for category in site.data.sitetext.service_categories.list %}
       <div class="col-md-6 col-lg-4 category-item">
-        <a class="category-link" href="{{ service_page.url }}">
+        <a class="category-link" data-toggle="modal" href="#p{{ forloop.index }}">
           <div class="category-hover">
             <div class="category-hover-content">
               <i class="{{ site.data.style.category-icon | default: "fas fa-plus fa-3x" }}"></i>
@@ -60,3 +46,5 @@
     </div>
   </div>
 </section>
+
+{% include modals.html %}

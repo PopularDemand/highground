@@ -1,6 +1,7 @@
 ---
 permalink: /designs/aesthetic
 layout: page
+external_id: aesthetic_designs
 ---
 
 {% for c in site.data.functional_designs.collections %}
