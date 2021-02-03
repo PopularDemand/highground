@@ -45,12 +45,12 @@ button, .btn {
 
 // Highlight color customization
 ::-moz-selection {
-  background: $primary;
+  background: $secondary;
   text-shadow: none;
 }
 
 ::selection {
-  background: $primary;
+  background: $secondary;
   text-shadow: none;
 }
 

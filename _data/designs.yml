@@ -1,0 +1,38 @@
+- id: functional_designs
+  external_id: functional_designs
+  directory: /assets/img/functional_designs
+  header:
+    title: <div>Functional Designs</div>
+    background_img:
+  description: <p>Functional designs are productions made for use in internet, application, or visual presentation formats.</p> <p>Need help producing a visually cohesive brand or filling in your website? For small businesses, entrepreneurs, and creators seeking to develop an online presence, we offer <a href="/designs" class="highlight-link">Logo and Web Interface</a> service bundles.</p>
+  collections:
+    - title: One Self
+      product: Logo Designs, Web UI Design
+      description: Graphical interface for the One Self Mighty Network
+      url: https://oneself.mn.co
+      directory: oneself
+      collection_image:
+        src: /assets/img/functional_designs/oneself/gold_on_black_separate_os.png
+        alt: gold on black os
+      items:
+        - filename: /assets/img/functional_designs/oneself/circle_s_yellow_red_red.png
+          description: Flat color logo
+          alt: flat color yellow s in yellow circle red background
+        - filename: /assets/img/functional_designs/oneself/circle_s_gold_red.png
+          description: Partial transparancy logo
+          alt: color gold s on gold circle red background
+        - filename: /assets/img/functional_designs/oneself/gold_on_black_separate_os.png
+          description: Alternate coloring
+          alt: color gold s in gold circle black background
+        - filename: /assets/img/functional_designs/oneself/one_self_gold_on_gray.png
+          description: Wordmark in alternate coloring
+          alt: one self logo wordmark gold on black
+        - filename: avatar_yellow_red.jpg
+          description: Generic user avatar in primary colors
+          alt: flat color yellow user icon in yellow circle red background
+        - filename: /assets/img/functional_designs/oneself/purpose_banner_2.png
+          description: Site banner for purpose page
+          alt: purpose banner white on black
+        - filename: /assets/img/functional_designs/oneself/red_gold_favicon.png
+          description: Favicon
+          alt: gold s in gold circle favicon

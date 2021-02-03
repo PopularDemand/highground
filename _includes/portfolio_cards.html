@@ -1,50 +1,60 @@
-<!-- service category -->
-<section class="page-section bg-dark" id="{{ site.data.sitetext.servce_categories.section | default: "service-category-cards" }}">
-  <div class="container">
+<!-- Assign variables -->
+<!-- Render content -->
+<!-- if a filter is passed, only show that category of designs -->
 
-    <!-- Title -->
-    {% if site.data.sitetext.service_categories.section_title or site.data.sitetext.service_categories.section_subtitle %}
-    <div class="row section-heading-row">
-      <div class="col-lg-12 text-center">
+{% if include.filter %}
+  {% assign category = site.data.designs | where: "external_id", include.filter | first %}
+{% endif %}
 
-        {% if site.data.sitetext.service_categories.section_title %}
-        <h2 class="section-heading text-uppercase">{{ site.data.sitetext.service_categories.section_title | markdownify | default: "Services" }}</h2>
-        {% endif %}
-
-        {% if site.data.sitetext.service_categories.section_subtitle %}
-        <h3 class="section-subheading text-muted">{{ site.data.sitetext.service_categories.text | markdownify }}</h3>
-        {% endif %}
-
-      </div>
-    </div>
-    {% endif %}
-
-    <!-- Cards -->
+<!-- Cards -->
+<div class="portfolio-collection-cards">
     <div class="row">
-	    {% for category in site.data.sitetext.service_categories.list %}
-      <div class="col-md-6 col-lg-4 category-item">
-        <a class="category-link" data-toggle="modal" href="#p{{ forloop.index }}">
-          <div class="category-hover">
-            <div class="category-hover-content">
-              <i class="{{ site.data.style.category-icon | default: "fas fa-plus fa-3x" }}"></i>
+
+    {% for collection in category.collections %}
+    <div class="col-12 col-md-6 portfolio-collection">
+        <a class="portfolio-collection-link" data-toggle="modal" href="#p{{ forloop.index }}">
+        <div class="card">
+          <div class="card-body">
+
+            <!-- title -->
+            <h4 class="collection-title">{{ collection.title}}</h4>
+
+            <!-- description and image-->
+            <div class="row">
+
+              <!-- description-->
+              <div class="col-12 col-md-6">
+                <div class="portfolio-collection-description">
+                  <p class="text-muted collection-description">
+                    {{ collection.description }}
+                  </p>
+                  <p class="text-muted">
+                    <b>Products:</b> {{ collection.product }}
+                    <br/>
+                    <span class="view-all">View all designs</spa>
+                  </p>
+                </div>
+              </div>
+
+              <!-- image -->
+              <div class="col-12 col-md-6">
+                <div class="collection-image">
+                  <img class="img-fluid" src="{{ collection.collection_image.src }}" alt="{{ collection.collection_image.alt }}">
+                </div>
+              </div>
             </div>
           </div>
-          <img class="img-fluid" src="{{ category.image }}" alt="">
-        </a>
-        <div class="category-caption">
-          <h4 class="category-title">{{ category.title}}</h4>
-          <p class="text-muted">{{ category.short_desc }}</p>
         </div>
-      </div>
-	    {% endfor %}
-
-      <div class="d-flex d-lg-none col-md-6 align-items-center">
-        <a href="https://lovespresents.com">
-          <img src="assets/img/service_categories/loves_presents.png" alt="" width="100%;">
-        </a>
-      </div>
+      </a>
     </div>
+    {% endfor %}
   </div>
-</section>
+</div>
+
+<!-- <div class="d-flex d-lg-none col-md-6 align-items-center"> -->
+  <a href="https://lovespresents.com">
+    <img src="/assets/img/service_categories/loves_presents.png" alt="" width="100%;">
+  </a>
+<!-- </div> -->
 
 {% include modals.html %}
