@@ -36,3 +36,42 @@
         - filename: /assets/img/functional_designs/oneself/red_gold_favicon.png
           description: Favicon
           alt: gold s in gold circle favicon
+    - title: Chokolate Chip Family Dolls
+      product: Logo Designs, Graphic Ediiting
+      description: Logo Digitization, Image Editing, Webpage Wireframing
+      url: https://chokolatechipfamily.com
+      directory: ccfd
+      collection_image:
+        src: /assets/img/functional_designs/ccfd/circle_doll_brown.png
+        alt: ccfd logo brown
+      items:
+        - filename: /assets/img/functional_designs/ccfd/circle_doll_brown.png
+          description: Primary logo &mdash; black and brown
+          alt: brown and black ccfd logo
+        - filename: /assets/img/functional_designs/ccfd/circle_doll_black.png
+          description: Primary logo &mdash; black and transparent
+          alt: black and transparent ccfd logo
+        - filename: /assets/img/functional_designs/ccfd/original_wordmark.png
+          description: Original 1970's wordmark, extracted
+          alt: brochure clipping of original ccfd wordmark
+        - filename: /assets/img/functional_designs/ccfd/wordmark_brown.png
+          description: Wordmark &mdash; black and brown
+          alt: ccfd wordmark in black and brown
+        - filename: /assets/img/functional_designs/ccfd/wordmark_black.png
+          description: Wordmark &mdash; black and transparent
+          alt: ccfd wordmark in black and transparent
+        - filename: /assets/img/functional_designs/ccfd/wordmark_colored.png
+          description: Wordmark &mdash; client desired coloring
+          alt: ccfd wordmark in green and orange
+        - filename: /assets/img/functional_designs/ccfd/combomark_brown.png
+          description: Horizontal combination mark
+          alt: ccfd combination mark Horizontal
+        - filename: /assets/img/functional_designs/ccfd/combomark_brown_2.png
+          description: Alternative combination mark
+          alt: ccfd combination mark stacked
+        - filename: /assets/img/functional_designs/ccfd/vanilla_family_cropped.jpeg
+          description: Cropped and enhanced product photo
+          alt: vanilla chocolate chip family in box
+        - filename: /assets/img/functional_designs/ccfd/product_page.png
+          description: Wireframe of a product page
+          alt: wireframe of a product page
