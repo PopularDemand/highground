@@ -27,7 +27,7 @@
         - filename: /assets/img/functional_designs/oneself/one_self_gold_on_gray.png
           description: Wordmark in alternate coloring
           alt: one self logo wordmark gold on black
-        - filename: avatar_yellow_red.jpg
+        - filename: /assets/img/functional_designs/oneself/avatar_yellow_red.jpg
           description: Generic user avatar in primary colors
           alt: flat color yellow user icon in yellow circle red background
         - filename: /assets/img/functional_designs/oneself/purpose_banner_2.png

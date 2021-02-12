@@ -43,6 +43,11 @@ button, .btn {
   border-radius: 0;
 }
 
+// Bootstrap Overrides
+.modal {
+    padding-right: 0px !important;
+}
+
 // Highlight color customization
 ::-moz-selection {
   background: $secondary;

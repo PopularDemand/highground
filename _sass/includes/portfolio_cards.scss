@@ -22,7 +22,6 @@
     }
 
     .collection-image {
-      // max-width: 400px;
       margin: 0 auto;
     }
   }
@@ -37,9 +36,6 @@
       margin: 0;
     }
   }
-  // * {
-  //   z-index: 2;
-  // }
 }
 
 .portfolio-collection-modal {
@@ -49,32 +45,33 @@
   }
   
   .modal-content {
-    padding: 100px 0;
+    padding: 100px 0 50px;
     text-align: center;
-    h2 {
-      font-size: 3em;
-      margin-bottom: 15px;
-    }
-    p {
+
+    .header {
       margin-bottom: 30px;
     }
-    p.item-intro {
+
+    .modal-heading {
+      font-size: 3em;
+      margin-bottom: 30px;
+    }
+
+    .item-intro {
       font-size: 16px;
       font-style: italic;
-      margin: 20px 0 30px;
       @include serif-font;
     }
-    ul.list-inline {
-      margin-top: 0;
-      margin-bottom: 30px;
+
+    .item-image {
+      max-width: 100%;
     }
-    img {
-      margin-bottom: 30px;
-    }
+
     button {
       cursor: pointer;
     }
   }
+
   .close-modal {
     position: absolute;
     top: 25px;

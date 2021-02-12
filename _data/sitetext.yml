@@ -48,9 +48,9 @@ services:
 
 portfolio:
   title: "Portfolio"
-  text: "Lorem ipsum dolor sit amet consectetur."
+  text: "This is our portfolio."
   section: portfolio
-  closebutton: "Close Project"
+  closebutton: "Close"
     
 
 timeline:

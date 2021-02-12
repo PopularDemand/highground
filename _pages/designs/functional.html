@@ -5,8 +5,8 @@ external_id: functional_designs
 main_content_class: functional_designs
 ---
 <!-- Assign Variables -->
-{% assign header_title = site.data.designs.functional_designs.header.title %}
 {% assign category = site.data.designs | where: "external_id", "functional_designs" | first %}
+{% assign header_title = category.header.title %}
 {% comment %}
 {% assign header_text = site.data.functional_designs.site_text.header.text %}
 {% assign header_subtext = site.data.functional_designs.site_text.header.subtext %}

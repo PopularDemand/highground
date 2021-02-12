@@ -11,13 +11,15 @@
     <div class="row">
 
     {% for collection in category.collections %}
+
+    <!-- Card -->
     <div class="col-12 col-md-6 portfolio-collection">
         <a class="portfolio-collection-link" data-toggle="modal" href="#p{{ forloop.index }}">
         <div class="card">
           <div class="card-body">
 
             <!-- title -->
-            <h4 class="collection-title">{{ collection.title}}</h4>
+            <h4 class="collection-title">{{ collection.title }}</h4>
 
             <!-- description and image-->
             <div class="row">
@@ -31,7 +33,7 @@
                   <p class="text-muted">
                     <b>Products:</b> {{ collection.product }}
                     <br/>
-                    <span class="view-all">View all designs</spa>
+                    <span class="view-all">View more designs</spa>
                   </p>
                 </div>
               </div>
@@ -47,14 +49,55 @@
         </div>
       </a>
     </div>
+
+    <!-- Modal -->
+    <div class="portfolio-collection-modal modal fade" id="p{{ forloop.index }}" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <div class="modal-body">
+                <div class="header">
+                  <h2 class="text-uppercase modal-heading">{{ collection.title }}</h2>
+
+                  <p class="item-intro text-muted">{{ collection.description }}</p>
+
+                  <p class="text-muted">
+                    Listed is only a sampling of the full delivery. Check it out at <a href="{{ collection.url }}">{{ collection.url }}</a>.
+                  </p>
+                </div>
+
+                <div class="item-list">
+                  {% for item in collection.items %}
+                    <div class="row mb-5">
+                      <div class="col-6">
+                        <img class="item-image" src="{{ item.filename }}" alt="{{ item.alt }}">
+                      </div>
+                      <div class="col-6 d-flex align-items-center justify-content-center">
+                        <h5 class="item-description">{{ item.description }}</h5> 
+                      </div>
+                    </div>
+                  {% endfor %}
+                </div>
+
+                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                  <i class="fas fa-times"></i>
+                  {{ site.data.sitetext.portfolio.closebutton | default: "Close" }}
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
     {% endfor %}
   </div>
 </div>
 
-<!-- <div class="d-flex d-lg-none col-md-6 align-items-center"> -->
-  <a href="https://lovespresents.com">
-    <img src="/assets/img/service_categories/loves_presents.png" alt="" width="100%;">
-  </a>
-<!-- </div> -->
-
-{% include modals.html %}
