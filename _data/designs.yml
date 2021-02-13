@@ -1,3 +1,4 @@
+# Functional Designs
 - id: functional_designs
   external_id: functional_designs
   directory: /assets/img/functional_designs
@@ -7,7 +8,7 @@
   description: <p>Functional designs are productions made for use in internet, application, or visual presentation formats.</p> <p>Need help producing a visually cohesive brand or filling in your website? For small businesses, entrepreneurs, and creators seeking to develop an online presence, we offer <a href="/designs" class="highlight-link">Logo and Web Interface</a> service bundles.</p>
   collections:
     - title: One Self
-      product: Logo Designs, Web UI Design
+      product: Logo Design, Web UI Design
       description: Graphical interface for the One Self Mighty Network
       url: https://oneself.mn.co
       directory: oneself
@@ -34,6 +35,85 @@
           description: Site banner for purpose page
           alt: purpose banner white on black
         - filename: /assets/img/functional_designs/oneself/red_gold_favicon.png
+          description: Favicon
+          alt: gold s in gold circle favicon
+    - title: Chokolate Chip Family Dolls
+      product: Logo Design, Graphic Ediiting
+      description: Logo Digitization, Image Editing, Webpage Wireframing
+      url: https://chokolatechipfamily.com
+      directory: ccfd
+      collection_image:
+        src: /assets/img/functional_designs/ccfd/circle_doll_brown.png
+        alt: ccfd logo brown
+      items:
+        - filename: /assets/img/functional_designs/ccfd/circle_doll_brown.png
+          description: Primary logo &mdash; black and brown
+          alt: brown and black ccfd logo
+        - filename: /assets/img/functional_designs/ccfd/circle_doll_black.png
+          description: Primary logo &mdash; black and transparent
+          alt: black and transparent ccfd logo
+        - filename: /assets/img/functional_designs/ccfd/original_wordmark.png
+          description: Original 1970's wordmark, extracted
+          alt: brochure clipping of original ccfd wordmark
+        - filename: /assets/img/functional_designs/ccfd/wordmark_brown.png
+          description: Wordmark &mdash; black and brown
+          alt: ccfd wordmark in black and brown
+        - filename: /assets/img/functional_designs/ccfd/wordmark_black.png
+          description: Wordmark &mdash; black and transparent
+          alt: ccfd wordmark in black and transparent
+        - filename: /assets/img/functional_designs/ccfd/wordmark_colored.png
+          description: Wordmark &mdash; client desired coloring
+          alt: ccfd wordmark in green and orange
+        - filename: /assets/img/functional_designs/ccfd/combomark_brown.png
+          description: Horizontal combination mark
+          alt: ccfd combination mark Horizontal
+        - filename: /assets/img/functional_designs/ccfd/combomark_brown_2.png
+          description: Alternative combination mark
+          alt: ccfd combination mark stacked
+        - filename: /assets/img/functional_designs/ccfd/vanilla_family_cropped.jpeg
+          description: Cropped and enhanced product photo
+          alt: vanilla chocolate chip family in box
+        - filename: /assets/img/functional_designs/ccfd/product_page.png
+          description: Wireframe of a product page
+          alt: wireframe of a product page
+
+# Aesthetic Designs
+- id: aesthetic_designs
+  external_id: aesthetic_designs
+  directory: /assets/img/aesthetic_designs
+  header:
+    title: <div>Aesthetic Designs</div>
+    background_img:
+  description: <p>Aesthetic designs are productions made for wall art, embroidery, and simply to be visually engaging.</p> <p>Would you like a specially made design series for yourself or another? Need help jump starting your next design product? We offer <a href="/designs" class="highlight-link">Design Commissioning and Consultation</a> service bundles, and would love to help! Follow the link to Contact Us!</p>
+  collections:
+    - title: "How?: About God"
+      product: Posters
+      description: A poster series that asks the question "How is this about God?" Featuring quadrangles.
+      # url: https://oneself.mn.co
+      directory: how_about_god
+      collection_image:
+        src: /assets/img/aesthetic_designs/how_about_god/all_designs_poster.png
+        alt: six how about god posters
+      items:
+        - filename: /assets/img/aesthetic_designs/how_about_god/concentric_black_bg.png
+          description: Concentric quads &mdash; light to dark
+          alt: light quadrangle within a darker quadrangle within a darker quadrangle
+        - filename: /assets/img/aesthetic_designs/how_about_god/quads_black_bg.png
+          description: Three quads of varied height &mdash; largest dark
+          alt: large light quadrangle beside a stack of two quads smaller dark stacked atop a longer mid-colored
+        - filename: /assets/img/aesthetic_designs/how_about_god/stripes_black_bg.png
+          description: Three quads of varied width &mdash; largest dark
+          alt: large dark quadrangle beside a thinner mid-colored quad beside a thinner light quad
+        - filename: /assets/img/aesthetic_designs/how_about_god/one_self_gold_on_gray.png
+          description: Wordmark in alternate coloring
+          alt: one self logo wordmark gold on black
+        - filename: /assets/img/aesthetic_designs/how_about_god/avatar_yellow_red.jpg
+          description: Generic user avatar in primary colors
+          alt: flat color yellow user icon in yellow circle red background
+        - filename: /assets/img/aesthetic_designs/how_about_god/purpose_banner_2.png
+          description: Site banner for purpose page
+          alt: purpose banner white on black
+        - filename: /assets/img/aesthetic_designs/how_about_god/red_gold_favicon.png
           description: Favicon
           alt: gold s in gold circle favicon
     - title: Chokolate Chip Family Dolls
