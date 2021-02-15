@@ -8,14 +8,14 @@
 
 <!-- Cards -->
 <div class="portfolio-collection-cards">
-    <div class="row">
+    <div class="row row-cols-1 row-cols-md-2">
 
     {% for collection in category.collections %}
 
     <!-- Card -->
-    <div class="col-12 col-md-6 portfolio-collection">
-        <a class="portfolio-collection-link" data-toggle="modal" href="#p{{ forloop.index }}">
-        <div class="card">
+    <div class="portfolio-collection col mb-4">
+        <a class="portfolio-collection-link" data-bs-toggle="modal" data-bs-target="#p{{ forloop.index }}">
+        <div class="card h-100">
           <div class="card-body">
 
             <!-- title -->
@@ -25,7 +25,7 @@
             <div class="row">
 
               <!-- description-->
-              <div class="col-12 col-md-6">
+              <div class="col-6">
                 <div class="portfolio-collection-description">
                   <p class="text-muted collection-description">
                     {{ collection.description }}
@@ -39,7 +39,7 @@
               </div>
 
               <!-- image -->
-              <div class="col-12 col-md-6">
+              <div class="col-6">
                 <div class="collection-image">
                   <img class="img-fluid" src="{{ collection.collection_image.src }}" alt="{{ collection.collection_image.alt }}">
                 </div>
@@ -54,7 +54,7 @@
     <div class="portfolio-collection-modal modal fade" id="p{{ forloop.index }}" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
+        <div class="close-modal" data-bs-dismiss="modal">
           <div class="lr">
             <div class="rl"></div>
           </div>
@@ -86,7 +86,7 @@
                   {% endfor %}
                 </div>
 
-                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                <button class="btn btn-primary" data-bs-dismiss="modal" type="button">
                   <i class="fas fa-times"></i>
                   {{ site.data.sitetext.portfolio.closebutton | default: "Close" }}
                 </button>

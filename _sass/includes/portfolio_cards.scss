@@ -3,14 +3,11 @@
 
   .portfolio-collection-link {
     text-decoration: none;
+    cursor: pointer;
   }
 
   .portfolio-collection {
     right: 0;
-
-    &:not(:last-child) {
-      margin-bottom: 100px;
-    }
 
     .portfolio-collection-title {
       color: $primary;
