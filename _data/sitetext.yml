@@ -12,24 +12,24 @@ service_categories:
   list:
     - title: The Aesthetic
       short_desc: Artwork and Decor
-      long_desc:
+      icon: fa-palette fa fa-3x
       image: assets/img/service_categories/taco_tuesday_iaab.jpg
       page:
       service_page_id: aesthetic_designs
       
     - title: The Functional
       short_desc: Business Graphics
-      long_desc:
+      icon: fa-code fa fa-3x
       image: assets/img/service_categories/oneself_dotdash_logos.jpg
       page:
       service_page_id: functional_designs
         
-    - title: The Community
-      short_desc: Social Network for Digital Creatives
-      long_desc:
-      image: assets/img/service_categories/the_werx.jpg
-      page:
-      service_page_id: community
+    # - title: The Community
+    #   short_desc: Social Network for Digital Creatives
+    #   icon: fa-users-cog fa fa-3x
+    #   image: assets/img/service_categories/the_werx.jpg
+    #   page:
+    #   service_page_id: community
 
 services:
   title: "Services"
