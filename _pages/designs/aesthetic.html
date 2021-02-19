@@ -16,32 +16,30 @@ main_content_class: aesthetic_designs
 {% endcomment %}
 
 <!-- Rendered content -->
-<div class="designs">
-    {% include masthead.html
-        title=header_title
-        text=header_text
-        subtext=header_subtext
-        button_text=header_button
-        button_link=header_button_link
-    %}
+{% include masthead.html
+    title=header_title
+    text=header_text
+    subtext=header_subtext
+    button_text=header_button
+    button_link=header_button_link
+%}
 
-    <main class="{{ page.main_content_class }}">
-        <div class="page-section">
-            <div class="container">
-                <div class="row">
-                    <div class="col col-xs-12">
-                        <div class="page-description">
-                            {{ category.description }}
-                        </div>
+<main class="{{ page.main_content_class }}">
+    <div class="page-section">
+        <div class="container">
+            <div class="row">
+                <div class="col col-xs-12">
+                    <div class="page-description">
+                        {{ category.description }}
                     </div>
                 </div>
             </div>
         </div>
-    
-        <div class="page-section">
-            <div class="container">
-                {% include portfolio_cards.html filter="aesthetic_designs" %}
-            </div>
+    </div>
+
+    <div class="page-section">
+        <div class="container">
+            {% include portfolio_cards.html filter="aesthetic_designs" %}
         </div>
-    </main>
-</div>
+    </div>
+</main>

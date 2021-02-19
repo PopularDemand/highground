@@ -1,0 +1,56 @@
+---
+permalink: /designs/
+layout: page_with_masthead
+external_id: designs
+main_content_class: designs
+---
+<!-- Assign Variables -->
+{% assign category = site.data.designs | where: "external_id", "designs" | first %}
+{% assign header_title = category.header.title %}
+{% comment %}
+{% assign header_text = site.data.functional_designs.site_text.header.text %}
+{% assign header_subtext = site.data.functional_designs.site_text.header.subtext %}
+{% assign header_button = site.data.functional_designs.site_text.header.button %}
+{% assign header_button_link = site.data.functional_designs.site_text.header.button_link %}
+{% endcomment %}
+
+<!-- Rendered content -->
+{% include masthead.html
+    title=header_title
+    text=header_text
+    subtext=header_subtext
+    button_text=header_button
+    button_link=header_button_link
+%}
+
+<main>
+	<div class="page-section">
+		<div class="container">
+			<div class="row">
+					<p>We offer several design packages perfect for all business, entrepreneurial, and creative endeavors.</p>
+					<p>Looking for new brand images? Looking to spruce up the ones you have? Check out our <a class="highlight-link" href="#functional-designs">Functional Design</a> packages for logo and web UI deals.</p>
+					
+					<p>Our designers also create designs just to be pretty about it. Our <a href="#aesthetic-designs" class="highlight-link">Aesthetic Designs</a> are created for wall art, throw pillows, and Instagram feeds.</p>
+			</div>
+		</div>
+	</div>
+	<div class="page-section">
+		<div class="container">
+			<h2>Services</h2>
+			<div class="row">
+				<h3 id="functional-designs">Functional Designs</h3>
+				
+			</div>
+
+			<div class="row">
+				<h3 id="aesthetic-designs">Aesthetic Designs</h3>
+				<p>These designs are offered for purchase at our sister site, Love's Presents. If one catches your eye, see if it's available for your home at LovesPresents.com. If not contact us, and we'll get it there for you!</p>
+				<ul>
+					<li>list</li>
+					<li>of</li>
+					<li>services</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</main>
