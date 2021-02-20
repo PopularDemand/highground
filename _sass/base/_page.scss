@@ -12,15 +12,6 @@
             }
         }
 
-        .highlight-link {
-            font-weight: bold;
-            padding: 0 .25em;
-        }
-
-        .section-heading-row {
-            margin-bottom: 75px;
-        }
-
         h2.section-heading {
             font-size: 40px;
             margin-top: 0;
@@ -34,6 +25,17 @@
             margin-bottom: 75px;
             text-transform: none;
             @include serif-font;
+        }
+
+        .heading-bar {
+            color: $white;
+            background-color: $primary;
+            margin: 0 -20px;
+            padding: 10px 20px;
+
+            *:last-child {
+                margin-bottom: 0;
+            }
         }
     }
 }

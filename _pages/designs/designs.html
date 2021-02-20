@@ -36,87 +36,58 @@ main_content_class: designs
   <div class="page-section">
     <div class="container">
       <!-- Functional Designs -->
-      <div class="row">
+      <div class="row section-heading-row mb-4">
         <div class="col">
-          <h2 id="functional-designs">{{ functional_designs.header.title }}</h2>
+          <div class="heading-bar">
+            <h2 class="section-heading" id="functional-designs">{{ functional_designs.header.title }}</h2>
+          </div>
         </div>
       </div>
       <div class="row flex-wrap-reverse">
-        <div class="col-12 col-md-8 mb-4">
+        <div class="col-12 col-md-8">
           <div>{{ functional_designs.description }}</div>
           <div>{{ functional_designs.why }}</div>
         </div>
 
-        <div class="col-12 col-md-4 mb-4">
+        <div class="col-12 col-md-4 mb-4 text-center">
           <img class="img-fluid"src="{{ functional_designs.image.src }}" alt="{{ functional_designs.image.alt }}">
         </div>
       </div>
 
       <!-- Service Cards -->
-      <div class="row">
-        <div class="service-cards">
-          <div class="row row-cols-md-2 row-cols-1">
-            {% for service in functional_designs.services %}
-              <!-- Service Card -->
-              <div class="service-card col mb-4">
-                <div class="card h-100">
+      <div class="service-list">
+        {% for service in functional_designs.services %}
+          <hr class="mb-4 mt-4">
+          <div class="row mb-4">
+            <div class="col-12 col-md-8">
+              <h3 class="service-name">{{ service.name }}</h3>
+              <p class="service-description">{{ service.description }}</p>
+              <p class="service-additional">{{ service.additional }}</p>
+            </div>
 
-                  <div class="card-body">
-                    <!-- description and image-->
-                    <div class="row">
+            <div class="col-12 col-md-4 ">
+              <div
+                class="service-image-price"
+                style="background-image: url({{ service.image.src }});"
+              >
+                <!-- changes here should be made in .spacer.invisible below -->
+                <div class="overlay">
+                  <p class="price-range-label mb-0">Price range:</p>
+                  <p class="service-price splash-color mb-0">{{ service.price_range }}</p>
+                </div>
 
-                      <!-- description-->
-                      <div class="col-md-6">
-                        <h4 class="service-title">{{ service.name }}</h4>
-
-                        <p class="service-description">
-                          {{ service.description }}
-                        </p>
-
-                        <p class="service-included">
-                          <b>Included:</b> {{ service.included }}
-                        </p>
-
-                        <!-- only shows at md width -->
-                        <div class="d-none d-md-block">
-                          <p class="service-price-range">
-                            <b>Price range:</b> {{ service.price_range }}
-                          </p>
-
-                          <div class="service-additional text-muted">
-                            <p>{{ service.additional }}</p>
-                          </div>
-                        </div>
-                      </div>
-
-                      <!-- image -->
-                      <div class="col-md-6">
-                        <div class="service-image">
-                          <img class="img-fluid" src="{{ service.image.src }}" alt="{{ service.image.alt }}">
-                        </div>
-
-                        <!-- only shows at sm width -->
-                        <div class="d-md-none">
-                          <p class="service-price-range">
-                            <b>Price range:</b> {{ service.price_range }}
-                          </p>
-
-                          <div class="service-additional text-muted">
-                            <p>{{ service.additional }}</p>
-                          </div>
-                        </div>
-                      </div>
-
-                    </div>
-
-                  </div>
+                <!-- necessary for .service-image-price height -->
+                <div class="spacer invisible">
+                  <p class="price-range-label mb-0">Price range:</p>
+                  <p class="service-price mb-0">{{ service.price_range }}</p>
                 </div>
               </div>
-              <!--end service card -->
-            {% endfor %}
 
+              <!-- CTA -->
+              <a class="cta-btn btn btn-primary" href="#contact-modal">Order Now</a>
+            </div>
           </div>
-        </div>
+        {% endfor %}
 
       </div>
 

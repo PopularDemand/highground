@@ -12,12 +12,12 @@
     src: /assets/img/service_categories/oneself_dotdash_logos.jpg
     alt: oneself and dotdash logos
   header:
-    title: <div>Functional Designs</div>
+    title: <div>Business Designs</div>
     background_img:
   description: >
-    <p>Functional designs are productions made for use in internet, application, or visual presentation formats.</p>
+    <p>Business designs are productions made for use in internet, application, or visual presentation formats.</p>
     <p>For small businesses, entrepreneurs, and creators seeking to develop an online presence, we offer <b>Logo, Web Interface, and Business Essentials</b> service bundles.</p>
-  short_desc: Functional designs are for business and web purposes. If you need branding, logo, or business presentation graphics, start here!
+  short_desc: Business designs are for business and web purposes. If you need branding, logo, or business presentation graphics, start here!
   why: Looking for new brand images? Looking to spruce up the ones you have? Just need business cards? Check out these business graphics deals.
   collections:
     - title: One Self
@@ -99,10 +99,10 @@
         src: /assets/img/lovespresents_embroidery.jpg
         alt: words loves presents embroidered on hat
     - name: Branding Logo Package
-      description: We will create one logo, wordmark, and combination mark for your business, app, or online brand.
+      description: We will create one logo, one wordmark, and one combination mark (3 total) for your business, app, or online brand.
       included: Three (3) PNGs and three (3) source files, (web-safe SVGs). Three (3) revisions.
       price_range: $100 - $250
-      addtional: It's likely you will need more than 3 images for a full brand. For example, you may need both a horizontal and a vertical combination mark for presentation on desktop computer and mobile devices respectively. The price range reflects any additional images you may need. For the base six (6) images, the range minimum is the price you'll pay.
+      addtional: It's likely you will need more than 3 images for a full brand. For example, you may need both a horizontal and a vertical combination mark for presentation on desktop computer and mobile devices respectively. The price range reflects any additional images you may need. For the base six (6) total images, the range minimum is the price you'll pay.
       image:
         src: /assets/img/lovespresents_embroidery.jpg
         alt: words loves presents embroidered on hat
