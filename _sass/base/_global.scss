@@ -9,6 +9,7 @@ body {
   }
 }
 
+// Element styles
 p {
   line-height: 1.75;
 }
@@ -27,12 +28,8 @@ a.btn {
   justify-content: center;
 }
 
-.text-primary {
-  color: $primary !important;
-}
-
-.splash-color {
-  color: $secondary;
+button, .btn {
+  border-radius: 0;
 }
 
 h1,
@@ -45,8 +42,17 @@ h6 {
   @include heading-font;
 }
 
-button, .btn {
-  border-radius: 0;
+// Global Classes
+.text-primary {
+  color: $primary !important;
+}
+
+.splash-color {
+  color: $secondary;
+}
+
+.footnote {
+  font-size: .8em;
 }
 
 // Bootstrap Overrides

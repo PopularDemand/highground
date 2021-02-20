@@ -15,40 +15,40 @@
     <!-- Card -->
     <div class="portfolio-collection col mb-4">
         <a class="portfolio-collection-link" data-bs-toggle="modal" data-bs-target="#p{{ forloop.index }}">
-        <div class="card h-100">
-          <div class="card-body">
+          <div class="card h-100">
+            <div class="card-body">
 
-            <!-- title -->
-            <h4 class="collection-title">{{ collection.title }}</h4>
+              <!-- title -->
+              <h4 class="collection-title">{{ collection.title }}</h4>
 
-            <!-- description and image-->
-            <div class="row">
+              <!-- description and image-->
+              <div class="row">
 
-              <!-- description-->
-              <div class="col-6">
-                <div class="portfolio-collection-description">
-                  <p class="text-muted collection-description">
-                    {{ collection.description }}
-                  </p>
-                  <p class="text-muted">
-                    <b>Products:</b> {{ collection.product }}
-                    <br/>
-                    <span class="view-all">View more designs</spa>
-                  </p>
+                <!-- description-->
+                <div class="col-6">
+                  <div class="portfolio-collection-description">
+                    <p class="text-muted collection-description">
+                      {{ collection.description }}
+                    </p>
+                    <p class="text-muted">
+                      <b>Products:</b> {{ collection.product }}
+                      <br/>
+                      <span class="view-all">View more designs</spa>
+                    </p>
+                  </div>
                 </div>
-              </div>
 
-              <!-- image -->
-              <div class="col-6">
-                <div class="collection-image">
-                  <img class="img-fluid" src="{{ collection.collection_image.src }}" alt="{{ collection.collection_image.alt }}">
+                <!-- image -->
+                <div class="col-6">
+                  <div class="collection-image">
+                    <img class="img-fluid" src="{{ collection.collection_image.src }}" alt="{{ collection.collection_image.alt }}">
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </a>
-    </div>
+        </a>
+      </div>
 
     <!-- Modal -->
     <div class="portfolio-collection-modal modal fade" id="p{{ forloop.index }}" tabindex="-1" role="dialog" aria-hidden="true">

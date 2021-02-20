@@ -7,6 +7,8 @@ main_content_class: designs
 <!-- Assign Variables -->
 {% assign category = site.data.designs | where: "external_id", "designs" | first %}
 {% assign header_title = category.header.title %}
+{% assign functional_designs = site.data.designs | where: "external_id", "functional_designs" | first %}
+{% assign aesthetic_designs = site.data.designs | where: "external_id", "aesthetic_designs" | first %}
 {% comment %}
 {% assign header_text = site.data.functional_designs.site_text.header.text %}
 {% assign header_subtext = site.data.functional_designs.site_text.header.subtext %}
@@ -16,41 +18,192 @@ main_content_class: designs
 
 <!-- Rendered content -->
 {% include masthead.html
-    title=header_title
-    text=header_text
-    subtext=header_subtext
-    button_text=header_button
-    button_link=header_button_link
+  title=header_title
+  text=header_text
+  subtext=header_subtext
+  button_text=header_button
+  button_link=header_button_link
 %}
 
 <main>
-	<div class="page-section">
-		<div class="container">
-			<div class="row">
-					<p>We offer several design packages perfect for all business, entrepreneurial, and creative endeavors.</p>
-					<p>Looking for new brand images? Looking to spruce up the ones you have? Check out our <a class="highlight-link" href="#functional-designs">Functional Design</a> packages for logo and web UI deals.</p>
-					
-					<p>Our designers also create designs just to be pretty about it. Our <a href="#aesthetic-designs" class="highlight-link">Aesthetic Designs</a> are created for wall art, throw pillows, and Instagram feeds.</p>
-			</div>
-		</div>
-	</div>
-	<div class="page-section">
-		<div class="container">
-			<h2>Services</h2>
-			<div class="row">
-				<h3 id="functional-designs">Functional Designs</h3>
-				
-			</div>
+  <div class="page-section">
+    <div class="container">
+      <div class="row">
+          <p>We offer several design packages perfect for all business, entrepreneurial, and creative endeavors. Our pricing is geared toward getting the small-town entrepreneur up and running with a brand identity. That's great news for big city folk &ndash; these prices at this quality can't be beat.</p>
+      </div>
+    </div>
+  </div>
+  <div class="page-section">
+    <div class="container">
+      <!-- Functional Designs -->
+      <div class="row">
+        <div class="col">
+          <h2 id="functional-designs">{{ functional_designs.header.title }}</h2>
+        </div>
+      </div>
+      <div class="row flex-wrap-reverse">
+        <div class="col-12 col-md-8 mb-4">
+          <div>{{ functional_designs.description }}</div>
+          <div>{{ functional_designs.why }}</div>
+        </div>
 
-			<div class="row">
-				<h3 id="aesthetic-designs">Aesthetic Designs</h3>
-				<p>These designs are offered for purchase at our sister site, Love's Presents. If one catches your eye, see if it's available for your home at LovesPresents.com. If not contact us, and we'll get it there for you!</p>
-				<ul>
-					<li>list</li>
-					<li>of</li>
-					<li>services</li>
-				</ul>
-			</div>
-		</div>
-	</div>
+        <div class="col-12 col-md-4 mb-4">
+          <img class="img-fluid"src="{{ functional_designs.image.src }}" alt="{{ functional_designs.image.alt }}">
+        </div>
+      </div>
+
+      <!-- Service Cards -->
+      <div class="row">
+        <div class="service-cards">
+          <div class="row row-cols-md-2 row-cols-1">
+            {% for service in functional_designs.services %}
+              <!-- Service Card -->
+              <div class="service-card col mb-4">
+                <div class="card h-100">
+
+                  <div class="card-body">
+                    <!-- description and image-->
+                    <div class="row">
+
+                      <!-- description-->
+                      <div class="col-md-6">
+                        <h4 class="service-title">{{ service.name }}</h4>
+
+                        <p class="service-description">
+                          {{ service.description }}
+                        </p>
+
+                        <p class="service-included">
+                          <b>Included:</b> {{ service.included }}
+                        </p>
+
+                        <!-- only shows at md width -->
+                        <div class="d-none d-md-block">
+                          <p class="service-price-range">
+                            <b>Price range:</b> {{ service.price_range }}
+                          </p>
+
+                          <div class="service-additional text-muted">
+                            <p>{{ service.additional }}</p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- image -->
+                      <div class="col-md-6">
+                        <div class="service-image">
+                          <img class="img-fluid" src="{{ service.image.src }}" alt="{{ service.image.alt }}">
+                        </div>
+
+                        <!-- only shows at sm width -->
+                        <div class="d-md-none">
+                          <p class="service-price-range">
+                            <b>Price range:</b> {{ service.price_range }}
+                          </p>
+
+                          <div class="service-additional text-muted">
+                            <p>{{ service.additional }}</p>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <!--end service card -->
+            {% endfor %}
+
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Aesthetic Designs -->
+      <div class="row">
+        <div class="col">
+          <h2 id="aesthetic-designs">{{ aesthetic_designs.header.title }}</h2>
+          <p>{{ aestheic_designs.description }}</p>
+          <p>Our designers also create designs just to be pretty about it. Our <a href="#aesthetic-designs" class="highlight-link">Aesthetic Designs</a> are created for wall art, throw pillows, and Instagram feeds.</p>
+        </div>
+
+        <!-- Service Cards -->
+        <div class="service-cards">
+          <div class="row row-cols-2 row-cols-md-1">
+            {% for service in aesthetic_designs.services %}
+              <!-- Service Card -->
+              <div class="service-card col mb-4">
+                <div class="card h-100">
+
+                  <div class="card-body">
+                    <!-- description and image-->
+                    <div class="row">
+
+                      <!-- description-->
+                      <div class="col-md-6">
+                        <h4 class="service-title">{{ service.name }}</h4>
+
+                        <p class="service-description">
+                          {{ service.description }}
+                        </p>
+
+                        <p class="service-included">
+                          <b>Included:</b> {{ service.included }}
+                        </p>
+
+                        <!-- only shows at md width -->
+                        <div class="d-none d-md-block">
+                          <p class="service-price-range">
+                            <b>Price range:</b> {{ service.price_range }}
+                          </p>
+
+                          <div class="service-additional text-muted">
+                            <p>{{ service.additional }}</p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- right/bottom column; image and additional -->
+                      <div class="col-md-6">
+                        <div class="service-image">
+                          <img class="img-fluid" src="{{ service.image.src }}" alt="{{ service.image.alt }}">
+                        </div>
+
+                        <!-- only shows on small screens -->
+                        <div class="d-md-none">
+                          <p class="service-price-range">
+                            <b>Price range:</b> {{ service.price_range }}
+                          </p>
+
+                          <div class="service-additional text-muted">
+                            <p>{{ service.additional }}</p>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <!--end service card -->
+            {% endfor %}
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="page-section">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <p class="footnote"><i>* - If our incredibly low prices still seem out of budget, <a href="#contact-modal">contact us</a>, and we will guide you to our overseas design partners. Same high-quality guaranteed. Don't let perceived affordability hold you back building your dream.</i></p>
+        </div>
+      </div>
+    </div>
+  </div>
 </main>
