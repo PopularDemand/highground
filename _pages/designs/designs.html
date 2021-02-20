@@ -26,6 +26,8 @@ main_content_class: designs
 %}
 
 <main>
+
+  <!-- Page Headering -->
   <div class="page-section">
     <div class="container">
       <div class="row">
@@ -33,9 +35,11 @@ main_content_class: designs
       </div>
     </div>
   </div>
+
+  <!-- Functional Designs -->
   <div class="page-section">
     <div class="container">
-      <!-- Functional Designs -->
+      <!-- Section Heading -->
       <div class="row section-heading-row mb-4">
         <div class="col">
           <div class="heading-bar">
@@ -43,6 +47,8 @@ main_content_class: designs
           </div>
         </div>
       </div>
+
+      <!-- Section Description and Image -->
       <div class="row flex-wrap-reverse">
         <div class="col-12 col-md-8">
           <div>{{ functional_designs.description }}</div>
@@ -54,7 +60,7 @@ main_content_class: designs
         </div>
       </div>
 
-      <!-- Service Cards -->
+      <!-- Individual service rows -->
       <div class="service-list">
         {% for service in functional_designs.services %}
           <hr class="mb-4 mt-4">
@@ -62,7 +68,8 @@ main_content_class: designs
             <div class="col-12 col-md-8">
               <h3 class="service-name">{{ service.name }}</h3>
               <p class="service-description">{{ service.description }}</p>
-              <p class="service-additional">{{ service.additional }}</p>
+              <b>Included:</b><br>
+              <p class="service-included">{{ service.included }}</p>
             </div>
 
             <div class="col-12 col-md-4 ">
@@ -87,87 +94,79 @@ main_content_class: designs
               <a class="cta-btn btn btn-primary" href="#contact-modal">Order Now</a>
             </div>
           </div>
+          <p class="service-additional">{{ service.additional }}</p>
         {% endfor %}
-
       </div>
+    </div>
+  </div>
 
-      <!-- Aesthetic Designs -->
-      <div class="row">
+  <!-- Aesthetic Designs -->
+  <div class="page-section">
+    <div class="container">
+      <!-- Section Heading -->
+      <div class="row section-heading-row mb-4">
         <div class="col">
-          <h2 id="aesthetic-designs">{{ aesthetic_designs.header.title }}</h2>
-          <p>{{ aestheic_designs.description }}</p>
-          <p>Our designers also create designs just to be pretty about it. Our <a href="#aesthetic-designs" class="highlight-link">Aesthetic Designs</a> are created for wall art, throw pillows, and Instagram feeds.</p>
-        </div>
-
-        <!-- Service Cards -->
-        <div class="service-cards">
-          <div class="row row-cols-2 row-cols-md-1">
-            {% for service in aesthetic_designs.services %}
-              <!-- Service Card -->
-              <div class="service-card col mb-4">
-                <div class="card h-100">
-
-                  <div class="card-body">
-                    <!-- description and image-->
-                    <div class="row">
-
-                      <!-- description-->
-                      <div class="col-md-6">
-                        <h4 class="service-title">{{ service.name }}</h4>
-
-                        <p class="service-description">
-                          {{ service.description }}
-                        </p>
-
-                        <p class="service-included">
-                          <b>Included:</b> {{ service.included }}
-                        </p>
-
-                        <!-- only shows at md width -->
-                        <div class="d-none d-md-block">
-                          <p class="service-price-range">
-                            <b>Price range:</b> {{ service.price_range }}
-                          </p>
-
-                          <div class="service-additional text-muted">
-                            <p>{{ service.additional }}</p>
-                          </div>
-                        </div>
-                      </div>
-
-                      <!-- right/bottom column; image and additional -->
-                      <div class="col-md-6">
-                        <div class="service-image">
-                          <img class="img-fluid" src="{{ service.image.src }}" alt="{{ service.image.alt }}">
-                        </div>
-
-                        <!-- only shows on small screens -->
-                        <div class="d-md-none">
-                          <p class="service-price-range">
-                            <b>Price range:</b> {{ service.price_range }}
-                          </p>
-
-                          <div class="service-additional text-muted">
-                            <p>{{ service.additional }}</p>
-                          </div>
-                        </div>
-                      </div>
-
-                    </div>
-
-                  </div>
-                </div>
-              </div>
-              <!--end service card -->
-            {% endfor %}
-
+          <div class="heading-bar">
+            <h2 class="section-heading" id="functional-designs">{{ aesthetic_designs.header.title }}</h2>
           </div>
         </div>
+      </div>
+
+      <!-- Section Description and Image -->
+      <div class="row flex-wrap-reverse">
+        <div class="col-12 col-md-8">
+          <div>{{ aesthetic_designs.description }}</div>
+          <div>{{ aesthetic_designs.why }}</div>
+        </div>
+
+        <div class="col-12 col-md-4 mb-4 text-center">
+          <img class="img-fluid"src="{{ aesthetic_designs.image.src }}" alt="{{ aesthetic_designs.image.alt }}">
+        </div>
+      </div>
+
+      <!-- Individual service rows -->
+      <div class="service-list">
+        {% for service in aesthetic_designs.services %}
+          <hr class="mb-4 mt-4">
+          <div class="row mb-4">
+            <div class="col-12 col-md-8">
+              <h3 class="service-name">{{ service.name }}</h3>
+              <p class="service-description">{{ service.description }}</p>
+              <b>Included:</b><br>
+              <p class="service-included">{{ service.included }}</p>
+            </div>
+
+            <div class="col-12 col-md-4 ">
+              <div
+                class="service-image-price"
+                style="background-image: url({{ service.image.src }});"
+              >
+                <!-- changes here should be made in .spacer.invisible below -->
+                <div class="overlay">
+                  <p class="price-range-label mb-0">Price range:</p>
+                  <p class="service-price splash-color mb-0">{{ service.price_range }}</p>
+                </div>
+
+                <!-- necessary for .service-image-price height -->
+                <div class="spacer invisible">
+                  <p class="price-range-label mb-0">Price range:</p>
+                  <p class="service-price mb-0">{{ service.price_range }}</p>
+                </div>
+              </div>
+
+              <!-- CTA -->
+              <a class="cta-btn btn btn-primary" href="#contact-modal">Order Now</a>
+            </div>
+
+            <p class="service-additional">{{ service.additional }}</p>
+          </div>
+        {% endfor %}
 
       </div>
     </div>
   </div>
 
+  <!-- foot notes -->
   <div class="page-section">
     <div class="container">
       <div class="row">
