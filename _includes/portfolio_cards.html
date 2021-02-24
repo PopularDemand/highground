@@ -1,7 +1,4 @@
-<!-- Assign variables -->
-<!-- Render content -->
 <!-- if a filter is passed, only show that category of designs -->
-
 {% if include.filter %}
   {% assign category = site.data.designs | where: "external_id", include.filter | first %}
 {% endif %}

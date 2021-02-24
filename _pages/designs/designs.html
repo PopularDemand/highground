@@ -25,6 +25,8 @@ main_content_class: designs
   button_link=header_button_link
 %}
 
+{% include contact_modal.html %}
+
 <main>
 
   <!-- Page Headering -->
@@ -91,7 +93,7 @@ main_content_class: designs
               </div>
 
               <!-- CTA -->
-              <a class="cta-btn btn btn-primary" href="#contact-modal">Order Now</a>
+              <a class="cta-btn btn btn-primary" data-bs-toggle="modal" data-bs-target="#contact-modal" href="#">Order Now</a>
             </div>
           </div>
           <p class="service-additional">{{ service.additional }}</p>
@@ -155,7 +157,7 @@ main_content_class: designs
               </div>
 
               <!-- CTA -->
-              <a class="cta-btn btn btn-primary" href="#contact-modal">Order Now</a>
+              <a class="cta-btn btn btn-primary" data-bs-toggle="modal" data-bs-target="#contact-modal" href="#">Order Now</a>
             </div>
 
             <p class="service-additional">{{ service.additional }}</p>

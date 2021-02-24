@@ -218,7 +218,7 @@
   services:
     - name: Consumer Product
       description: Do you have your own design you would like to have printed on home goods or apparel? Our team of designers can help you bring your art to life! Contact us to have your design printed and potentially sold at our sister site, <a href="https://lovespresents.com">Love's Presents.</a>
-      included: Your art on a consumer good.
+      included: Your art on a print-on-demand consumer good.
       price_range: $50 &ndash; $250
       additional: Price depends on number of different products you'd like your design available on and complexity of variation per product.
       image: /assets/img/lovespresents_embroidery.jpg
