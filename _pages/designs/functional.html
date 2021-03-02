@@ -15,31 +15,81 @@ main_content_class: functional_designs
 {% endcomment %}
 
 <!-- Rendered content -->
+{% include contact_modal.html %}
+
 <div class="designs">
     {% include masthead.html
-        title=header_title
-        text=header_text
-        subtext=header_subtext
-        button_text=header_button
-        button_link=header_button_link
+      title=header_title
+      text=header_text
+      subtext=header_subtext
+      button_text=header_button
+      button_link=header_button_link
     %}
 
     <main class="{{ page.main_content_class }}">
         <div class="page-section">
             <div class="container">
                 <div class="row">
-                    <div class="col col-xs-12">
-                        <div class="page-description">
-                            {{ category.description }}
-                        </div>
+                  <div class="col col-xs-12">
+                    <div class="page-description">
+                        {{ category.description }}
                     </div>
+                  </div>
                 </div>
             </div>
         </div>
-    
-        <div class="page-section">
-            <div class="container">
-                {% include portfolio_cards.html filter="functional_designs" %}
+
+        <div class="container mb-4">
+            <div class="row mb-4">
+                <h2 class="section-heading">
+                    Services
+                </h2>
+            </div>
+            <div class="row mb-4 service-list">
+                {% for service in category.services %}
+                
+                {%- if forloop.index != 1 -%}
+                <hr class="mb-4 mt-4">
+                {%- endif -%}
+
+                <div class="row mb-4">
+                  <div class="col-12 col-md-8">
+                    <h3 class="service-name">{{ service.name }}</h3>
+                    <p class="service-description">{{ service.description }}</p>
+                    <b>Included:</b><br>
+                    <p class="service-included mb-0">{{ service.included }}</p>
+                  </div>
+
+                  <div class="col-12 col-md-4 ">
+                    <div
+                    class="service-image-price"
+                    style="background-image: url({{ service.image.src }});"
+                    >
+                    <!-- changes here should be made in .spacer.invisible below -->
+                    <div class="overlay">
+                      <p class="price-range-label mb-0">Price range:</p>
+                      <p class="service-price splash-color mb-0">{{ service.price_range }}</p>
+                    </div>
+
+                    <!-- necessary for .service-image-price height -->
+                    <div class="spacer invisible">
+                      <p class="price-range-label mb-0">Price range:</p>
+                      <p class="service-price mb-0">{{ service.price_range }}</p>
+                    </div>
+                    </div>
+
+                    <!-- CTA -->
+                    <a class="cta-btn btn btn-primary" data-bs-toggle="modal" data-bs-target="#contact-modal" href="#">Order Now</a>
+                  </div>
+                </div>
+                {%- if service.additional -%}
+                <p class="service-additional">{{ service.additional }}</p>
+                {%- endif-%}
+                {% endfor %}
+            </div>
+
+            <div class="row justify-content-center">
+                <a class="cta-btn btn btn-tertiary p-3 w-75" data-bs-toggle="modal" data-bs-target="#contact-modal" href="#">Contact us to get started today</a>
             </div>
         </div>
     </main>

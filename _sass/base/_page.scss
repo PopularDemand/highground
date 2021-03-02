@@ -1,14 +1,24 @@
 .standard-page {
     .page-section {
         padding: $page-spacing-sm;
+
         &:first-child {
             padding-top: $page-spacing-sm * 2;
         }
 
+        &:not(:last-child) {
+            margin-bottom: $page-spacing-lg;
+        }
+
         @media(min-width:768px) {
             padding: $page-spacing-md 0;
+
             &:first-child {
                 padding-top: $page-spacing-md * 2;
+            }
+
+            &:not(:last-child) {
+                margin-bottom: $page-spacing-md;
             }
         }
 
