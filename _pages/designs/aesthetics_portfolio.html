@@ -1,0 +1,46 @@
+---
+permalink: /designs/aesthetic/portfolio
+layout: page_with_masthead
+external_id: aesthetic_portfolio
+main_content_class: aesthetic_portfolio
+---
+
+<!-- Assign Variables -->
+{% assign category = site.data.designs | where: "external_id", "aesthetic_designs" | first %}
+{% assign header_title = category.header.title %}
+{% comment %}
+{% assign header_text = site.data.aesthetic_designs.site_text.header.text %}
+{% assign header_subtext = site.data.aesthetic_designs.site_text.header.subtext %}
+{% assign header_button = site.data.aesthetic_designs.site_text.header.button %}
+{% assign header_button_link = site.data.aesthetic_designs.site_text.header.button_link %}
+{% endcomment %}
+
+<!-- Rendered content -->
+{% include masthead.html
+    title=header_title
+    text=header_text
+    subtext=header_subtext
+    button_text=header_button
+    button_link=header_button_link
+%}
+
+<main class="{{ page.main_content_class }}">
+    <div class="page-section">
+        <div class="container">
+            <div class="row">
+                <div class="col col-xs-12">
+                    <div class="page-description">
+                        {{ category.description }}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="page-section">
+        <div class="container">
+            <h2>Aesthetics Portfolio</h2>
+            {% include portfolio_cards.html filter="aesthetic_designs" %}
+        </div>
+    </div>
+</main>
