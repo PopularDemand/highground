@@ -8,6 +8,7 @@ main_content_class: aesthetic_portfolio
 <!-- Assign Variables -->
 {% assign category = site.data.designs | where: "external_id", "aesthetic_designs" | first %}
 {% assign header_title = category.header.title %}
+{% assign aesthetic_designs_page = site.pages | where: "external_id", "aesthetic_designs" | first %}
 {% comment %}
 {% assign header_text = site.data.aesthetic_designs.site_text.header.text %}
 {% assign header_subtext = site.data.aesthetic_designs.site_text.header.subtext %}
@@ -16,6 +17,8 @@ main_content_class: aesthetic_portfolio
 {% endcomment %}
 
 <!-- Rendered content -->
+{% include contact_modal.html %}
+
 {% include masthead.html
     title=header_title
     text=header_text
@@ -28,19 +31,24 @@ main_content_class: aesthetic_portfolio
     <div class="page-section">
         <div class="container">
             <div class="row">
-                <div class="col col-xs-12">
+                <div class="col">
+                    <h2 class="section-heading">
+                        Portfolio Examples
+                    </h2>
+
                     <div class="page-description">
                         {{ category.description }}
+                    </div>
+
+                    <div>
+                      <a href="{{ aesthetic_designs_page.permalink }}">See our <b>Aesthetics Services Offerings</b></a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="page-section">
-        <div class="container">
-            <h2>Aesthetics Portfolio</h2>
-            {% include portfolio_cards.html filter="aesthetic_designs" %}
-        </div>
+    <div class="container">
+        {% include portfolio_cards.html filter="aesthetic_designs" %}
     </div>
 </main>

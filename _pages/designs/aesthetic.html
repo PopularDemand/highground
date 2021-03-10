@@ -6,16 +6,11 @@ main_content_class: aesthetic_designs
 ---
 
 <!-- Assign Variables -->
-{% assign aesthetic_designs_page = site.pages | where: "external_id", "aesthetic_designs" | first %}
+{% assign aesthetic_portfolio_page = site.pages | where: "external_id", "aesthetic_portfolio" | first %}
+{% assign functional_designs_page = site.pages | where: "external_id", "functional_designs" | first %}
 {% assign category = site.data.designs | where: "external_id", "aesthetic_designs" | first %}
-{% assign services = category.services }
+{% assign services = category.services %}
 {% assign header_title = category.header.title %}
-{% comment %}
-{% assign header_text = site.data.functional_designs.site_text.header.text %}
-{% assign header_subtext = site.data.functional_designs.site_text.header.subtext %}
-{% assign header_button = site.data.functional_designs.site_text.header.button %}
-{% assign header_button_link = site.data.functional_designs.site_text.header.button_link %}
-{% endcomment %}
 
 <!-- Rendered content -->
 {% include contact_modal.html %}
@@ -34,16 +29,20 @@ main_content_class: aesthetic_designs
             <div class="row">
                 <div class="col">
                     <h2 class="section-heading">
-                        Aesthetic Design Portfolio
+                        How We Can Help
                     </h2>
 
                     <div class="page-description">
                         {{ category.description }}
                     </div>
 
-                    <div>
-                      <a href="{{ aesthetic_designs_page.permalink }}">See our <b>Business Design Services Offerings</b></a>
-                    </div>
+                    <p>
+                      <a href="{{ functional_designs_page.permalink }}">See our <b>Business Design Services Offerings</b></a>
+                    </p>
+
+                    <p>
+                      <a href="{{ aesthetic_portfolio_page.permalink }}">See aesthetic examples</a>
+                    </p>
                 </div>
             </div>
         </div>

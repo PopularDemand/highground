@@ -10,6 +10,7 @@ main_content_class: designs
 {% assign functional_designs = site.data.designs | where: "external_id", "functional_designs" | first %}
 {% assign aesthetic_designs = site.data.designs | where: "external_id", "aesthetic_designs" | first %}
 {% assign functional_designs_page = site.pages | where: "external_id", "functional_designs" | first %}
+{% assign aesthetic_designs_page = site.pages | where: "external_id", "aesthetic_designs" | first %}
 {% comment %}
 {% assign header_text = site.data.functional_designs.site_text.header.text %}
 {% assign header_subtext = site.data.functional_designs.site_text.header.subtext %}
@@ -97,44 +98,10 @@ main_content_class: designs
         </div>
       </div>
 
-      <!-- Individual service rows -->
-      <div class="service-list">
-        {% for service in aesthetic_designs.services %}
-          <hr class="mb-4 mt-4">
-          <div class="row mb-4">
-            <div class="col-12 col-md-8">
-              <h3 class="service-name">{{ service.name }}</h3>
-              <p class="service-description">{{ service.description }}</p>
-              <b>Included:</b><br>
-              <p class="service-included">{{ service.included }}</p>
-            </div>
-
-            <div class="col-12 col-md-4 ">
-              <div
-                class="service-image-price"
-                style="background-image: url({{ service.image.src }});"
-              >
-                <!-- changes here should be made in .spacer.invisible below -->
-                <div class="overlay">
-                  <p class="price-range-label mb-0">Price range:</p>
-                  <p class="service-price splash-color mb-0">{{ service.price_range }}</p>
-                </div>
-
-                <!-- necessary for .service-image-price height -->
-                <div class="spacer invisible">
-                  <p class="price-range-label mb-0">Price range:</p>
-                  <p class="service-price mb-0">{{ service.price_range }}</p>
-                </div>
-              </div>
-
-              <!-- CTA -->
-              <a class="cta-btn btn btn-primary" data-bs-toggle="modal" data-bs-target="#contact-modal" href="#">Order Now</a>
-            </div>
-
-            <p class="service-additional">{{ service.additional }}</p>
-          </div>
-        {% endfor %}
-
+      <div class="row justify-content-center">
+        <a class="cta-btn btn btn-tertiary w-75 w-sm-100 p-3" href="{{ aesthetic_designs_page.permalink }}">
+          View Aesthetics
+        </a>
       </div>
     </div>
   </div>
@@ -144,7 +111,7 @@ main_content_class: designs
     <div class="container">
       <div class="row">
         <div class="col">
-          <p class="footnote"><i>* - If our incredibly low prices still seem out of budget, <a href="#contact-modal">contact us</a>, and we will guide you to our overseas design partners. Same high-quality guaranteed. Don't let perceived affordability hold you back building your dream.</i></p>
+          <p class="footnote"><i>* - If our incredibly low prices still seem out of budget, <a href="#contact-modal">contact us.</a> We will help guide you to the right designer. Same high-quality guaranteed. Don't let anything hold you back building your dream.</i></p>
         </div>
       </div>
     </div>
