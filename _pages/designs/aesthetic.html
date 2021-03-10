@@ -6,7 +6,9 @@ main_content_class: aesthetic_designs
 ---
 
 <!-- Assign Variables -->
+{% assign aesthetic_designs_page = site.pages | where: "external_id", "aesthetic_designs" | first %}
 {% assign category = site.data.designs | where: "external_id", "aesthetic_designs" | first %}
+{% assign services = category.services }
 {% assign header_title = category.header.title %}
 {% comment %}
 {% assign header_text = site.data.functional_designs.site_text.header.text %}
@@ -16,6 +18,8 @@ main_content_class: aesthetic_designs
 {% endcomment %}
 
 <!-- Rendered content -->
+{% include contact_modal.html %}
+
 {% include masthead.html
     title=header_title
     text=header_text
@@ -28,18 +32,30 @@ main_content_class: aesthetic_designs
     <div class="page-section">
         <div class="container">
             <div class="row">
-                <div class="col col-xs-12">
+                <div class="col">
+                    <h2 class="section-heading">
+                        Aesthetic Design Portfolio
+                    </h2>
+
                     <div class="page-description">
                         {{ category.description }}
+                    </div>
+
+                    <div>
+                      <a href="{{ aesthetic_designs_page.permalink }}">See our <b>Business Design Services Offerings</b></a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="page-section">
-        <div class="container">
-            {% include portfolio_cards.html filter="aesthetic_designs" %}
+    <div class="container">
+        <div class="row mb-4 service-list">
+            {% include service_category_services.html services=services %}
+        </div>
+
+        <div class="row justify-content-center">
+            <a class="cta-btn btn btn-tertiary p-3 w-75" data-bs-toggle="modal" data-bs-target="#contact-modal" href="#">Contact us to get started today</a>
         </div>
     </div>
 </main>

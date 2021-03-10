@@ -6,6 +6,7 @@ main_content_class: functional_portfolio
 ---
 
 <!-- Assign Variables -->
+{% assign functional_designs_page = site.pages | where: "external_id", "functional_designs" | first %}
 {% assign category = site.data.designs | where: "external_id", "functional_designs" | first %}
 {% assign header_title = category.header.title %}
 {% comment %}
@@ -28,12 +29,17 @@ main_content_class: functional_portfolio
     <div class="page-section">
         <div class="container">
             <div class="row">
-                <div class="col col-xs-12">
+                <div class="col">
                     <h2 class="section-heading">
                         Business Design Portfolio
                     </h2>
+
                     <div class="page-description">
                         {{ category.description }}
+                    </div>
+
+                    <div>
+                      <a href="{{ functional_designs_page.permalink }}">See our <b>Business Design Services Offerings</b></a>
                     </div>
                 </div>
             </div>

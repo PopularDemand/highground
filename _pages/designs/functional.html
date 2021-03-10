@@ -5,7 +5,7 @@ external_id: functional_designs
 main_content_class: functional_designs
 ---
 <!-- Assign Variables -->
-{% assign functional_portfolio_page = site.pages | where: "external_id", "functional_designs" | first %}
+{% assign functional_portfolio_page = site.pages | where: "external_id", "functional_portfolio" | first %}
 {% assign category = site.data.designs | where: "external_id", "functional_designs" | first %}
 {% assign services = category.services %}
 {% assign header_title = category.header.title %}
