@@ -38,3 +38,11 @@
 		}
 	}
 }
+
+@media(min-width:767px) {
+  .service-list {
+  	.service-included {
+  		margin-bottom: 0px;
+  	}
+  }
+}

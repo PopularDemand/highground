@@ -17,9 +17,9 @@ url    : "" # the base hostname & protocol for your site, e.g. http://example.co
 baseurl: "" # the subpath of your site, e.g. /blog
 include: ["_pages"]
 
-title      : Create Space
-email      : iamalexbrady@gmail.com
-description: "Site description"
+title      : High Ground Designs
+email      : alexa@highground.tech
+description: Design services by High Ground Tech Co.
 author     : High Ground Tech Team
 coyright   : 
 # logo     : #optional, defaults to site title

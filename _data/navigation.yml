@@ -1,9 +1,9 @@
 nav:
-  - title: "Services"
-    section: service-category-cards
+  - title: "Business Designs"
+    url: /designs/business
 
-  # - title: "Portfolio"
-  #   section: portfolio
+  - title: "Artistic Designs"
+    section: /designs/aesthetic
     
   # - title: "About"
   #   section: timeline
@@ -11,9 +11,5 @@ nav:
   # - title: "Team"
   #   section: team
 
-  - title: "Connect"
+  - title: "Get Started"
     section: contact
-
-  - title: iamalexbrady.com
-    url: https://iamalexbrady.com
-    alt-design: true

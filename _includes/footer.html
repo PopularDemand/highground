@@ -1,37 +1,37 @@
-  <!-- Footer -->
-  <footer class="footer" id="footer" style="background-color:white;">
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-md-4">
-          <span class="copyright">Copyright &copy; {{ site.copyright }} {{ 'now' | date: "%Y" }}</span>
-        </div>
+<!-- Footer -->
+<footer class="footer" id="footer" style="background-color:white;">
+  <div class="container">
+    <!-- Social Media -->
+    <div class="row mb-4">
+      <ul class="list-inline social-buttons">
+        {% for link in site.data.sitetext.footer.social  %}
+        <li class="list-inline-item">
+          {% if link.url %}
+          <a href="{{ link.url }}">
+            {% if link.icon %}<i class="{{ link.icon }}"></i>{% endif %}
+          </a>
+          {% endif %}
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
 
-		<!-- Social Media -->
-        <div class="col-md-4">
-          <ul class="list-inline social-buttons">
-		  {% for link in site.data.sitetext.footer.social  %}
-            <li class="list-inline-item">
-			  {% if link.url %}
-              <a href="{{ link.url }}">
-                {% if link.icon %}<i class="{{ link.icon }}"></i>{% endif %}
-              </a>
-			  {% endif %}
-            </li>
-			{% endfor %}
-          </ul>
-        </div>
+    <div class="row mb-4 align-items-center justify-content-center">
+      <div class="col">
+        <span class="copyright">Copyright &copy; {{ site.copyright }} {{ 'now' | date: "%Y" }}</span>
+      </div>
 
-		<!-- Legal -->
-        <div class="col-md-4">
-          <ul class="list-inline quicklinks">
-            <li class="list-inline-item">
-              <a href="legal">{{ site.data.sitetext.footer.legal | default: "Privacy Policy" }}</a>
-            </li>
-          </ul>
-        </div>
+      <!-- Legal -->
+      <div class="col">
+        <ul class="list-inline quicklinks">
+          <li class="list-inline-item">
+            <a href="/legal">{{ site.data.sitetext.footer.legal | default: "Privacy Policy" }}</a>
+          </li>
+        </ul>
       </div>
     </div>
-  </footer>
+  </div>
+</footer>
 {% if page.layout == "page" %}
 <script>
 fixPageShort();

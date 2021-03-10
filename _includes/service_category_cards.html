@@ -1,12 +1,3 @@
-<!-- variables -->
-{% for page in site.pages %}
-  {% if page.external_id == "functional_designs" %}
-    {% assign functional_url = page.url %}
-  {% elsif page.external_id == "aesthetic_designs" %}
-    {% assign aesthetic_url = page.url %}
-  {% endif %}
-{% endfor %}
-
 <!-- service category -->
 <section class="page-section bg-dark" id="{{ site.data.sitetext.servce_categories.section | default: "service-category-cards" }}">
   <div class="container">
