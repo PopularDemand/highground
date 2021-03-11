@@ -1,9 +1,25 @@
 nav:
-  - title: "Business Designs"
-    url: /designs/business
+  - title: "Portfolio"
+    url: /designs
 
-  - title: "Artistic Designs"
-    url: /designs/aesthetic
+  - title: Services
+    dropdown: true
+    dropdown_links:
+      - title: For Business
+        url: /designs/business
+      - title: For Art Lovers
+        url: /designs/aesthetic
+
+  - title: Our Designs
+    dropdown: true
+    dropdown_links:
+      - title: Business Graphics
+        url: /designs/business/portfolio
+      - title: Art and Decor
+        url: /designs/aesthetic/portfolio
+      - title: Shop Designs 
+        url: https://lovespresents.com
+        target: _blank
     
   # - title: "About"
   #   section: timeline
