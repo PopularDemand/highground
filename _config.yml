@@ -17,7 +17,7 @@ url    : "" # the base hostname & protocol for your site, e.g. http://example.co
 baseurl: "" # the subpath of your site, e.g. /blog
 include: ["_pages"]
 
-title      : High Ground Designs
+title      : High Ground Design
 email      : alexa@highground.tech
 description: Design services by High Ground Tech Co.
 author     : High Ground Tech Team
