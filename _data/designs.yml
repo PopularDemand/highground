@@ -2,7 +2,7 @@
 - id: designs
   external_id: designs
   header:
-    title: Design Portfolio
+    title: What We Create
 # Functional Designs
 - id: functional_designs
   external_id: functional_designs
@@ -121,7 +121,7 @@
       image:
         src: /assets/img/lovespresents_embroidery.jpg
         alt: words loves presents embroidered on hat
-    - name: Social Media Graphic series
+    - name: Social Media Graphic Series
       description: We will create a series of visually similar graphics for promotion of your brand on Social Media (Facebook, Instagram, Twitter).
       included: Five, fifteen, or thirty (1, 15, 30) visually similar images of ideal dimensions for one social media platform (e.g. Instagram.) Post to your social media accounts once a week, every two days, or every day for a month! Recycle the images as much after that.
       price_range: $75 &ndash; $300

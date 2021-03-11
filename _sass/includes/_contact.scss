@@ -33,15 +33,15 @@ section#contact {
     box-shadow: none;
   }
 
-  @keyframes swing {
+  @keyframes rock {
     0%,5%, 10% { transform: rotate(0deg); }
-    2.5% { transform: rotate(-10deg); }
-    7.5% { transform: rotate(10deg); }
+    2.5% { transform: rotate(-5deg); }
+    7.5% { transform: rotate(5deg); }
   }
 
   .cta-btn {
       font-size: 1.2em;
-      animation: swing 5.6s linear infinite;
+      animation: rock 5.6s linear infinite;
   }
 
   ::-webkit-input-placeholder {

@@ -48,8 +48,10 @@
   }
 
   .dropdown-item {
-    margin-left: 2em;
-
+    &::before {
+      content: "⊳";
+      width: 2em;
+    }
     &:hover {
       background-color: initial !important; // bootstrap override
     }
