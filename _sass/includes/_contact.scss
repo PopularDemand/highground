@@ -4,16 +4,18 @@ section#contact {
   background-image: url("#{$contact-image}");
   background-repeat: no-repeat;
   background-position: center;
+
   .section-heading {
     color: $white;
   }
+
   .section-subheading {
     color: $gray-300;
     line-height: 1.4;
     font-size: 18px;
   }
+
   .form-group {
-    margin-bottom: 25px;
     input,
     textarea {
       padding: 20px;
@@ -22,9 +24,10 @@ section#contact {
       height: auto;
     }
     textarea.form-control {
-      height: 248px;
+      height: 132px;
     }
   }
+
   .form-control:focus {
     border-color: $primary;
     box-shadow: none;
