@@ -2,8 +2,7 @@
 - id: designs
   external_id: designs
   header:
-    title: Design Services
-
+    title: Design Portfolio
 # Functional Designs
 - id: functional_designs
   external_id: functional_designs

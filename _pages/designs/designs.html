@@ -10,7 +10,9 @@ main_content_class: designs
 {% assign functional_designs = site.data.designs | where: "external_id", "functional_designs" | first %}
 {% assign aesthetic_designs = site.data.designs | where: "external_id", "aesthetic_designs" | first %}
 {% assign functional_designs_page = site.pages | where: "external_id", "functional_designs" | first %}
+{% assign functional_portfolio_page = site.pages | where: "external_id", "functional_portfolio" | first %}
 {% assign aesthetic_designs_page = site.pages | where: "external_id", "aesthetic_designs" | first %}
+{% assign aesthetic_portfolio_page = site.pages | where: "external_id", "aesthetic_portfolio" | first %}
 {% comment %}
 {% assign header_text = site.data.functional_designs.site_text.header.text %}
 {% assign header_subtext = site.data.functional_designs.site_text.header.subtext %}
@@ -65,10 +67,11 @@ main_content_class: designs
         </div>
       </div>
 
-      <div class="row justify-content-center">
-        <a class="cta-btn btn btn-tertiary w-75 w-sm-100 p-3" href="{{ functional_designs_page.permalink }}">
+      <div class="row flex-direction-column justify-content-center align-items-center">
+        <a class="cta-btn btn btn-tertiary w-75 w-sm-100 p-3 mb-2" href="{{ functional_designs_page.permalink }}">
           View Business Services
         </a>
+        <a href="{{ functional_portfolio_page.url }}" class="text-center">See examples</a>
       </div>
 
     </div>
@@ -99,9 +102,10 @@ main_content_class: designs
       </div>
 
       <div class="row justify-content-center">
-        <a class="cta-btn btn btn-tertiary w-75 w-sm-100 p-3" href="{{ aesthetic_designs_page.permalink }}">
+        <a class="cta-btn btn btn-tertiary w-75 w-sm-100 p-3 mb-2" href="{{ aesthetic_designs_page.permalink }}">
           View Aesthetics
         </a>
+        <a href="{{ aesthetic_portfolio_page.url }}" class="text-center">See examples</a>
       </div>
     </div>
   </div>
