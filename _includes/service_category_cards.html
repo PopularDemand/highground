@@ -12,7 +12,7 @@
         {% endif %}
 
         {% if site.data.sitetext.service_categories.section_subtitle %}
-        <h3 class="section-subheading text-muted">{{ site.data.sitetext.service_categories.text | markdownify }}</h3>
+        <h3 class="section-subheading">{{ site.data.sitetext.service_categories.section_subtitle | markdownify }}</h3>
         {% endif %}
 
       </div>
@@ -25,10 +25,13 @@
 
       <!-- Get page to be linked to -->
       {% assign service_page = site.pages | where: "external_id", category.service_page_id | first %}
+      {% assign external_url = category.external_url %}
+      {% assign url = external_url | default: service_page.url %}
+
 
       <!-- Content -->
       <div class="col-md-6 col-lg-4 category-item">
-        <a class="category-link" href="{{ service_page.url }}">
+        <a class="category-link" href="{{ url }}">
           <div class="category-hover">
             <div class="category-hover-content">
               <i class="{{ category.icon | default: "fas fa-hand-pointer fa-3x" }}"></i>
@@ -42,12 +45,6 @@
         </div>
       </div>
 	    {% endfor %}
-
-      <div class="d-flex d-lg-none col-md-6 align-items-center">
-        <a href="https://lovespresents.com">
-          <img src="assets/img/service_categories/loves_presents.png" alt="" width="100%;">
-        </a>
-      </div>
     </div>
   </div>
 </section>

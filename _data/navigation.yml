@@ -3,7 +3,7 @@ nav:
     url: /designs/business
 
   - title: "Artistic Designs"
-    section: /designs/aesthetic
+    url: /designs/aesthetic
     
   # - title: "About"
   #   section: timeline
@@ -11,5 +11,5 @@ nav:
   # - title: "Team"
   #   section: team
 
-  - title: "Get Started"
+  - title: "Get Started Now"
     section: contact

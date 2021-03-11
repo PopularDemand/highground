@@ -1,28 +1,34 @@
 header:
-  pretext: <span>&mdash; alex brady's &mdash;</span>
+  pretext: <span>&mdash; High Ground &mdash;</span>
   title: <div class="header-text">Design<br>Studio<div>
-  subtext: Art &bull; Business &bull; Community
+  subtext: Business &bull; Art &bull; Community
   button:
   buttonlink:
 
 service_categories:
-  section_title: "We Create"
-  section_subtitle:
+  section_title: We Create
+  section_subtitle: See our services and offerings
   section_id: service_categories #html section id
   list:
-    - title: The Aesthetic
-      short_desc: Artwork and Decor
-      icon: fa-palette fa fa-3x
-      image: assets/img/service_categories/taco_tuesday_iaab.jpg
-      page:
-      service_page_id: aesthetic_designs
-      
-    - title: The Functional
+    - title: For Business
       short_desc: Business Graphics
       icon: fa-code fa fa-3x
       image: assets/img/service_categories/oneself_dotdash_logos.jpg
-      page:
       service_page_id: functional_designs
+
+
+    - title: For Pleasure
+      short_desc: Digital Art
+      icon: fa-palette fa fa-3x
+      image: assets/img/service_categories/taco_tuesday_iaab.jpg
+      service_page_id: aesthetic_designs
+      
+    - title: For You
+      short_desc: LovesPresents.com
+      icon: fa-shop
+      image: assets/img/service_categories/loves_presents.png
+      external_url: https://lovespresents.com
+      service_page_id:
         
     # - title: The Community
     #   short_desc: Social Network for Digital Creatives

@@ -73,9 +73,10 @@
     z-index: 2;
   }
 }
-@media(min-width:767px) {
+
+@media(min-width:992px) {
   #service-category-cards {
-    .category-item:nth-last-child(-n+2) { // last two children are the last row
+    .category-item:not(:last-child) {
       margin-bottom: 0px;
     }
   }

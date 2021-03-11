@@ -1,6 +1,6 @@
 // Styling for the contact section
 section#contact {
-  background-color: $gray-900;
+  background-color: $black;
   background-image: url("#{$contact-image}");
   background-repeat: no-repeat;
   background-position: center;
@@ -29,6 +29,18 @@ section#contact {
     border-color: $primary;
     box-shadow: none;
   }
+
+  @keyframes swing {
+    0%,5%, 10% { transform: rotate(0deg); }
+    2.5% { transform: rotate(-10deg); }
+    7.5% { transform: rotate(10deg); }
+  }
+
+  .cta-btn {
+      font-size: 1.2em;
+      animation: swing 5.6s linear infinite;
+  }
+
   ::-webkit-input-placeholder {
     font-weight: 700;
     color: $gray-400;

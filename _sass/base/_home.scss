@@ -25,12 +25,13 @@
         }
         
         h3.section-subheading {
-            font-size: 16px;
             font-weight: 400;
             font-style: italic;
-            margin-bottom: 75px; 
             text-transform: none;
             @include serif-font;
+            color: $gray-300;
+            line-height: 1.4;
+            font-size: 18px;
         }
     }
 
