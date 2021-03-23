@@ -33,12 +33,6 @@ section#contact {
     box-shadow: none;
   }
 
-  @keyframes rock {
-    0%,5%, 10% { transform: rotate(0deg); }
-    2.5% { transform: rotate(-5deg); }
-    7.5% { transform: rotate(5deg); }
-  }
-
   .cta-btn {
       font-size: 1.2em;
       animation: rock 5.6s linear infinite;

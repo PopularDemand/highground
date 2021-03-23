@@ -1,7 +1,7 @@
 header:
-  pretext: <span>&mdash; High Ground &mdash;</span>
-  title: <div class="header-text">Design<br>Studio<div>
-  subtext: Business &bull; Art &bull; Community
+  pretext:
+  title: <div class="">High<br>Ground<br>Tech<div>
+  subtext: Still the META
   button:
   buttonlink:
 
@@ -15,7 +15,6 @@ service_categories:
       icon: fa-code fa fa-3x
       image: assets/img/service_categories/oneself_dotdash_logos.jpg
       service_page_id: functional_designs
-
 
     - title: For Pleasure
       short_desc: Digital Art
@@ -36,6 +35,25 @@ service_categories:
     #   image: assets/img/service_categories/the_werx.jpg
     #   page:
     #   service_page_id: community
+        <div class="col">Websites</div>
+        <div class="col">Communications</div>
+        <div class="col">Applications</div>
+        <div class="col">And More</div>
+we_offer:
+  title: Effective Technology for Small Business and Creatives
+  section: we-offer
+  services:
+    - title: "Websites"
+      icon: fas fa-tv #find more at https://fontawesome.com/icons
+    - title: "Communication"
+      icon: fas fa-network-wired    
+    - title: "e-Commerce"
+      icon: fas fa-store
+    - title: "And More"
+      icon: fas fa-laptop-medical
+  cta:
+    title: See our full line of business services
+    btn_text: See All Services
 
 services:
   title: "Services"

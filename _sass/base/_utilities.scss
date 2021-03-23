@@ -1,3 +1,47 @@
 .cursive {
     @include script-font;
 }
+
+// animations
+@keyframes rock {
+  0%,5%, 10% { transform: rotate(0deg); }
+  2.5% { transform: rotate(-5deg); }
+  7.5% { transform: rotate(5deg); }
+}
+
+@keyframes bounce {
+  0%, 25%, 50% { transform: translateY(0px); }
+  12.5%, 37.5% { transform: translateY(100%); }
+}
+
+.bounce {
+	animation: bounce linear 4s infinite;
+}
+
+// Arrows
+.arrow {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
+.up {
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+}
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
