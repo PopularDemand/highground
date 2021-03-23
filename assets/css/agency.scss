@@ -10,6 +10,7 @@ $primary: {{ site.data.style.primary | default: "#fed136" }} !default;
 $secondary: {{ site.data.style.secondary | default: "white" }} !default;
 $white: {{ site.data.style.white | default: "#fff" }} !default;
 $black: {{ site.data.style.black | default: "#000" }} !default;
+$bg-dark-color: {{ site.data.style.bg-dark | default: "#000"; }} !default;
 
 // Custom Images
 $header-image: "{{ site.data.style.header-image }}";

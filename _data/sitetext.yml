@@ -55,6 +55,16 @@ we_offer:
     title: See our full line of business services
     btn_text: See All Services
 
+design_studio:
+  title: Full Service Design Studio
+  section: design-studio
+  link: designs.highground.tech/designs/
+  services:
+    - Logo
+    - Web UI
+    - Branding Packages
+    - Artwork and more!
+
 services:
   title: "Services"
   text: "Lorem ipsum"

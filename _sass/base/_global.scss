@@ -17,6 +17,7 @@ p {
 a {
   color: $primary;
   text-decoration: underline;
+
   &:hover {
     color: darken($primary, 10%);
   }
@@ -47,7 +48,11 @@ h6 {
   @include heading-font;
 }
 
+
+/****************
 // Global Classes
+/***************/
+
 .text-primary {
   color: $primary !important;
 }
@@ -56,21 +61,47 @@ h6 {
   color: $secondary;
 }
 
+.bg-dark {
+  color: $white;
+  background-color: $primary;
+
+  .text-muted {
+    color: $gray-200 !important; // bs override
+  }
+
+  a {
+    color: $white;
+  }
+
+  .btn-primary,
+  .btn-secondary,
+  .btn-tertiary {
+    color: initial;
+  }
+}
+
 .footnote {
   font-size: .8em;
 }
 
+.highlight-link {}
 
-.highlight-link {
 
-}
-
+/****************
 // Bootstrap Overrides
+/***************/
 .modal {
     padding-right: 0px !important;
 }
 
+.bg-dark {
+  background-color: $bg-dark-color !important;
+}
+
+
+/****************
 // Highlight color customization
+/***************/
 ::-moz-selection {
   background: $secondary;
   text-shadow: none;

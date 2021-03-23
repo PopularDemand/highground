@@ -1,0 +1,27 @@
+<!-- design studio -->
+<section class="page-section bg-dark" id="{{ site.data.sitetext.design_studio.section | default: "design-studio" }}">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <h2>{{ site.data.sitetext.design_studio.title }}</h2>
+        <p>At High Ground, we also offer a full suite of design services perfect for where you are in your business lifecycle.</p>
+        <ul>
+          {% for service in site.data.sitetext.design_studio.services %}
+              <li>{{ service }}</li>
+          {% endfor %}
+        </ul>
+
+        <p>Not sure which services are right for you? <a data-bs-toggle="modal" data-bs-target="#contact-modal" href="#">Contact us</a> and we'll help you determine the perfect next step!</p>
+      </div>
+
+      <div class="col-md-6">
+        <p class="text-center"><b>Get started on your designs today!</b></p>
+        <a href="{{site.data.sitetext.design_studio.link}}" class="btn cta-btn btn-tertiary">
+          Visit Design Studio
+        </a>
+        <p class="text-smaller text-center text-muted">designs.highground.tech</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End design studio -->
