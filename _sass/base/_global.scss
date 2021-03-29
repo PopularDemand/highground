@@ -61,6 +61,16 @@ h6 {
   color: $secondary;
 }
 
+.small-caps {
+  font-variant: small-caps;
+}
+
+.footnote {
+  font-size: .8em;
+}
+
+.highlight-link {}
+
 .bg-dark {
   color: $white;
   background-color: $primary;
@@ -79,12 +89,6 @@ h6 {
     color: initial;
   }
 }
-
-.footnote {
-  font-size: .8em;
-}
-
-.highlight-link {}
 
 
 /****************
