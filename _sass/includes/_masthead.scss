@@ -27,7 +27,7 @@ header.masthead {
       }
     }
     .intro-heading {
-      font-size: 50px;
+      font-size: 64px;
       font-weight: 700;
       line-height: 75px;
       color: white;
@@ -40,36 +40,39 @@ header.masthead {
     }
 
     .intro-lead-out {
-      font-size: 22px;
+      font-size: 25px;
       font-weight: bold;
-      line-height: 22px;
+      line-height: 25px;
       letter-spacing: .5px;
       color: $white;
 
       @include heading-font;
     }
   }
-}
 
-@media(min-width:992px) {
-  header.masthead {
-    
+  @media(min-width:768px) {
     .intro-text {
-      padding-top: 300px;
-      padding-bottom: 200px;
-      
+      padding-top: 100px;
+      padding-bottom: 100px;
+
       .intro-lead-in {
         font-size: 40px;
         line-height: 40px;
         margin-bottom: 25px;
         @include script-font;
       }
+      
       .intro-heading {
-        font-size: 75px;
+        font-size: 110px;
         font-weight: 700;
-        line-height: 75px;
+        line-height: 110px;
         margin-bottom: 50px;
         @include heading-font;
+      }
+
+      .intro-lead-out {
+        font-size: 40px;
+        @include script-font;
       }
     }
   }
