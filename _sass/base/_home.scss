@@ -19,9 +19,12 @@
         }
         
         h2.section-heading {
-            font-size: 40px;
+            font-size: 32px;
             margin-top: 0;
             margin-bottom: 15px;
+            @media(min-width:768px) {
+                font-size: 40px;
+            }
         }
         
         h3.section-subheading {

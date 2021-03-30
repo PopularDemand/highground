@@ -1,12 +1,23 @@
 // Button Styles
+button, .btn {
+  border-radius: 0;
+}
+
 .btn {
   @include heading-font;
   font-weight: 700;
+  border: 1px solid black;
+  box-shadow: 1px 1px 1px;
+
+  &:active,
+  &:focus {
+    box-shadow: .5px .5px 0 1px $black inset !important;
+  }
 }
 
 .btn-xl {
-  font-size: 18px;
-  padding: 20px 40px;
+  font-size: 1.3em;
+  padding: 20px;
 }
 
 .btn-primary {
@@ -19,10 +30,7 @@
     border-color: darken($primary, 7.5%) !important;
     color: white;
   }
-  &:active,
-  &:focus {
-    box-shadow: 0 0 0 0.2rem rgba(254, 209, 55,.5) !important;
-  }
+
 }
 
 .btn-secondary {
@@ -40,7 +48,7 @@
 
 .btn-tertiary {
   background-color: $secondary;
-  border: 1px solid $secondary;
+  // border: 1px solid $secondary;
   color: $primary;
 
   &:active,

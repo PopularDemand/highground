@@ -35,12 +35,8 @@ service_categories:
     #   image: assets/img/service_categories/the_werx.jpg
     #   page:
     #   service_page_id: community
-        <div class="col">Websites</div>
-        <div class="col">Communications</div>
-        <div class="col">Applications</div>
-        <div class="col">And More</div>
 we_offer:
-  title: Effective Technology for Small Business and Creatives
+  title: Effective Tech for Small Business and Creatives
   section: we-offer
   services:
     - title: "Websites"
@@ -51,9 +47,14 @@ we_offer:
       icon: fas fa-store
     - title: "And More"
       icon: fas fa-laptop-medical
-  cta:
+  contact_cta: Get Started Now
+  services_cta:
     title: See our full line of business services
     btn_text: See All Services
+    page_id: portfolio
+  image:
+    src: /assets/img/brand/heph_bw_double_border.png
+    alt: Mascot @ High Ground, Heph
 
 design_studio:
   title: Full Service Design Studio

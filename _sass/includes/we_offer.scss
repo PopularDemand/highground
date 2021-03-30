@@ -1,0 +1,29 @@
+#we-offer {
+	.brand-image {
+		width: 45%;
+		height: auto;
+	}
+
+	.brand-quote {
+		font-size: .9em;
+		p {
+			margin-bottom: 0;
+		}
+
+		.quote {
+			font-style: italic;
+		}
+
+		.attribution {
+			font-variant: small-caps;
+		}
+	}
+
+	.arrow:not(:last-of-type) {
+		margin-right: 20px;
+	}
+
+	*:last-child {
+		margin-bottom: 0;
+	}
+}
