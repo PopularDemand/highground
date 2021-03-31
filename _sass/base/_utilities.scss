@@ -5,8 +5,8 @@
 // animations
 @keyframes rock {
   0%,5%, 10% { transform: rotate(0deg); }
-  2.5% { transform: rotate(-5deg); }
-  7.5% { transform: rotate(5deg); }
+  2.5% { transform: rotate(-2.5deg); }
+  7.5% { transform: rotate(2.5deg); }
 }
 
 @keyframes bounce {

@@ -2,4 +2,30 @@
 	.modal-content {
 		border: 0;
 	}
+
+	.close-btn {
+		border: 0;
+		box-shadow: none;
+	}
+
+	::-webkit-input-placeholder {
+	  font-weight: 700;
+	  color: $gray-400;
+	  @include heading-font;
+	}
+	:-moz-placeholder {
+	  font-weight: 700;
+	  color: $gray-400;
+	  @include heading-font;
+	}
+	::-moz-placeholder {
+	  font-weight: 700;
+	  color: $gray-400;
+	  @include heading-font;
+	}
+	:-ms-input-placeholder {
+	  font-weight: 700;
+	  color: $gray-400;
+	  @include heading-font;
+	}
 }
