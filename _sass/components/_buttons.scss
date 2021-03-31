@@ -34,14 +34,14 @@ button, .btn {
 }
 
 .btn-secondary {
-  background-color: transparent;
+  background-color: $white;
   border: 1px solid $primary;
   color: $primary;
 
   &:active,
   &:focus,
   &:hover {
-    background-color: rgba($white, .05);
+    background-color: darken($white, 7.5%);
     color: $primary;
   }
 }

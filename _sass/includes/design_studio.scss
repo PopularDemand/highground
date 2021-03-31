@@ -1,0 +1,13 @@
+#design-studio {
+	.double-border {
+		border: 5px double $white;
+		padding: 10px 10px 0;
+	}
+	.design-studio-logo {
+		.design-studio {
+			font-size: 64px;
+			line-height: 64px;
+			font-weight: 700;
+		}
+	}
+}

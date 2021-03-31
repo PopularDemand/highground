@@ -28,6 +28,7 @@ $contact-image: "{{ site.data.style.contact-image }}";
 @import "components/client-scroll.scss";
 
 // Includes
+@import "includes/design_studio.scss";
 @import "includes/masthead.scss";
 @import "includes/services.scss";
 @import "includes/portfolio.scss";

@@ -23,7 +23,7 @@ a {
   }
 }
 
-a[target="_blank"]::after {
+a.outbound::after {
   content: "\2197"; // ↗
   margin: 0 1em 0 2px;
 }
@@ -32,6 +32,10 @@ a.btn {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+a.hide-link {
+  text-decoration: none;
 }
 
 h1,
@@ -63,6 +67,14 @@ h6 {
 
 .footnote {
   font-size: .8em;
+}
+
+.primary-shadow {
+  @include primary-shadow;
+}
+
+.heading-font {
+  @include heading-font;
 }
 
 .highlight-link {}
