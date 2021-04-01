@@ -1,0 +1,56 @@
+<!-- loves presents -->
+<section class="page-section" id="{{ site.data.sitetext.loves_presents.section | default: "loves-presents" }}">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 mb-4 mb-md-0">
+        <h2>{{ site.data.sitetext.loves_presents.title }}</h2>
+        {{ site.data.sitetext.loves_presents.text | markdownify }}
+
+
+        <img
+          src="{{ site.data.sitetext.loves_presents.product_image.src }}"
+          alt="{{ site.data.sitetext.loves_presents.product_image.src }}"
+          class="product-image mb-4"
+        />
+
+        <p>Find <a href="{{ site.data.sitetext.loves_presents.url.site }}" class="outbound">LovesPresents.com</a> on social media.</p>
+
+        <div class="social-icons text-center">
+          <a
+            href="{{ site.data.sitetext.loves_presents.url.twitter }}"
+            class="hide-link social-icon"
+            target="_blank">
+            <i class="fab fa-3x fa-twitter"></i>
+          </a>
+
+          <a
+          href="{{ site.data.sitetext.loves_presents.url.facebook }}"
+          class="hide-link social-icon"
+          target="_blank"
+          >
+            <i class="fab fa-3x fa-facebook"></i>
+          </a>
+
+          <a
+            href="{{ site.data.sitetext.loves_presents.url.instagram }}"
+            class="hide-link social-icon"
+            target="_blank"
+          >
+            <i class="fab fa-3x fa-instagram"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="col-md-6 text-center d-flex align-items-center">
+	      <a href="{{ site.data.sitetext.loves_presents.url.site }}">
+	      	<img
+	      		src="{{ site.data.sitetext.loves_presents.image.src}}"
+	      		alt="{{ site.data.sitetext.loves_presents.image.alt }}"
+	      		class="loves-presents-img"
+	      	/>
+	      </a>
+	    </div>
+    </div>
+  </div>
+</section>
+<!-- End loves presents -->

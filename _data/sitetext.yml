@@ -36,6 +36,22 @@ design_studio:
     - Branding Packages
     - Artwork and more!
 
+loves_presents:
+  title: LovesPresents.com
+  section: loves-presents
+  text: Signature apparel and decor designed by the Team @ High Ground.
+  image:
+    src: assets/img/brand/keep_love_around_lpc.png
+    alt: loves presents logo keep love around
+  product_image:
+    src: assets/img/brand/loves_presents_embroidered.png
+    alt: loves presents embroidered on a hat
+  url:
+    site: https://lovespresents.com
+    facebook: https://facebook.com/lovespresentscom
+    twitter: https://twitter.com/lovespresents2
+    instagram: https://instagram.com/lovespresents
+
 contact:
   title: "Reach out"
   section: contact
