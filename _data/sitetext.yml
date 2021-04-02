@@ -41,9 +41,6 @@ loves_presents:
   section: loves-presents
   text: Signature apparel and decor designed by the Team @ High Ground.
   image:
-    src: assets/img/brand/keep_love_around_lpc.png
-    alt: loves presents logo keep love around
-  product_image:
     src: assets/img/brand/loves_presents_embroidered.png
     alt: loves presents embroidered on a hat
   url:
@@ -56,7 +53,7 @@ contact:
   title: "Reach out"
   section: contact
   text: Take your business to the next level with the modern, simple, and cost-efficient technology solutions offered by High Ground.
-  pre_button_text: <span class="d-block mb-2">Build the business of your dreams.</span>Start your next step now.
+  pre_button_text: <span class="d-block mb-2">Build the business of your dreams.</span>Start your next step today.
   button_text: Start Next Step
     
 footer:

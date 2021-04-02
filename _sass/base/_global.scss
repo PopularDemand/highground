@@ -16,7 +16,8 @@ p {
 
 a {
   color: $primary;
-  text-decoration: underline;
+  text-decoration: none;
+  border-bottom: 1px solid $primary;
 
   &:hover {
     color: darken($primary, 10%);
@@ -36,6 +37,7 @@ a.btn {
 
 a.hide-link {
   text-decoration: none;
+  border-bottom: none;
 }
 
 h1,
@@ -52,6 +54,18 @@ h6 {
 /****************
 // Global Classes
 /***************/
+
+.p-relative {
+  position: relative;
+}
+
+.font-bold {
+  font-weight: bold;
+}
+
+.cursive {
+  @include script-font;
+}
 
 .text-primary {
   color: $primary !important;
@@ -89,6 +103,7 @@ h6 {
 
   a {
     color: $white;
+    border-bottom-color: $white;
   }
 
   .btn-primary,
