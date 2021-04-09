@@ -21,7 +21,7 @@ main_content_class: portfolio
 {% endcomment %}
 
 <!-- Rendered content -->
-{% include contact_modal.html %}
+<!-- contact modal rendered in default.html layout -->
 
 {% include masthead.html
   title=header_title
@@ -117,7 +117,7 @@ main_content_class: portfolio
     <div class="container">
       <div class="row">
         <div class="col">
-          <p class="footnote"><i>* - If our incredibly low prices still seem out of budget, <a href="#contact-modal">contact us.</a> We will help guide you to the right designer. Same high-quality guaranteed. Don't let anything hold you back building your dream.</i></p>
+          <p class="footnote"><i>* - If our incredibly low prices still seem out of budget, <a data-bs-toggle="modal" data-bs-target="#contact-modal" href="#">contact us.</a> We will help guide you to the right designer. Same high-quality guaranteed. Don't let anything hold you back building your dream.</i></p>
         </div>
       </div>
     </div>
