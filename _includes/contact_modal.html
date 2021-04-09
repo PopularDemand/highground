@@ -11,6 +11,11 @@
 
                   <p class="item-intro text-muted">Let us know how we can help move your business or project to the next level. After we receive your request, a team member will reach out via email to with the next steps for your solution.
                   </p>
+                  <ul class="services-list">
+                    {% for service in site.data.services.short_list %}
+                      <li>{{ service.title }}</li>
+                    {% endfor %}
+                  </ul>
                 </div>
 
                 <!-- Contact Form -->

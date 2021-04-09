@@ -8,6 +8,10 @@
 		box-shadow: none;
 	}
 
+	.services-list {
+		columns: 2;
+	}
+
 	::-webkit-input-placeholder {
 	  font-weight: 700;
 	  color: $gray-400;

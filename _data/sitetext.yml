@@ -8,15 +8,6 @@ header:
 we_offer:
   title: Effective Tech for Small Business and Creatives
   section: we-offer
-  services:
-    - title: "Websites"
-      icon: fas fa-tv #find more at https://fontawesome.com/icons
-    - title: "Communication"
-      icon: fas fa-network-wired    
-    - title: "e-Commerce"
-      icon: fas fa-store
-    - title: "And More"
-      icon: fas fa-laptop-medical
   contact_cta: Get Started Now
   services_cta:
     title: See our full line of business services

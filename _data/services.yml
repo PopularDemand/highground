@@ -1,0 +1,9 @@
+short_list:
+  - title: "Websites"
+    icon: fas fa-tv #find more at https://fontawesome.com/icons
+  - title: "Communication"
+    icon: fas fa-network-wired    
+  - title: "e-Commerce"
+    icon: fas fa-store
+  - title: "And More"
+    icon: fas fa-laptop-medical
