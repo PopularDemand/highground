@@ -9,8 +9,9 @@ The Jekyll structure of this theme includes:
 - `designs.yml` - High Ground specific service offerings
 - `style.yml` enables fully customizable colors, background images, and other style-related things
 - `_sass` - sass enabled style files
+- `_layouts` - full page wrappers for congruent layouts between website pages
+- `_layouts/default.html` - <html> wrapper layout. The parent layout for other layouts.
 - `_includes` - templates available for use in multiple files
-- `_layouts`
 - `assets` - static images, stylesheets, javascripts, etc
 
 ## Installation
@@ -25,7 +26,7 @@ $ bundle install
 
 ## Development
 ```bash
-$ jekyll serve
+$ jekyll serve -lw
 ```
 
 And open your browser at `http://localhost:4000`.
@@ -33,6 +34,8 @@ And open your browser at `http://localhost:4000`.
 ## Development notes
 
 * When creating a new file within the `_sass` directory, you must add the file to the `@import` list within `/assets/css/agency.scss` file
+
+* This theme uses [Bootstrap v5](https://getbootstrap.com) and its included [FontAwesome](https://fontawesome.com/icons) libraries. It's recommended to use the css utilities and icons provided by these libs for ease of development.
 
 ## Contributing
 
