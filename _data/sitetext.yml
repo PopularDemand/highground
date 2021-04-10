@@ -1,3 +1,7 @@
+#
+# HOME
+#
+
 header:
   pretext:
   title: <div class="">High<br>Ground<br>Tech<div>
@@ -46,7 +50,11 @@ contact:
   text: Take your business to the next level with the modern, simple, and cost-efficient technology solutions offered by High Ground.
   pre_button_text: <span class="d-block mb-2">Build the business of your dreams.</span>Start your next step today.
   button_text: Start Next Step
-    
+
+#
+# GLOBAL
+#
+
 footer:
   legal: "Privacy Policy"
   social:
@@ -58,6 +66,13 @@ footer:
       icon: "fab fa-github"
     - url: https://instagram.com/popdemtech
       icon: "fab fa-instagram"
+
+#
+# PORTFOLIO
+#
+
+portfolio:
+  description: We offer several design packages perfect for all business, entrepreneurial, and creative endeavors. Our pricing is geared toward getting the small-town entrepreneur up and running with online identity. That's great news for big city folk &ndash; these prices at this quality can't be beat.
 
 # services:
 #   title: "Services"

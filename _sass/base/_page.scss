@@ -1,25 +1,26 @@
 .standard-page {
     .page-section {
-        padding: $page-spacing-sm;
-
-        &:not(:last-child) {
-            margin-bottom: $page-spacing-lg;
-        }
+        margin: $page-spacing-sm 0;
 
         &:first-child {
-            padding-top: $page-spacing-sm * 2;
-            margin-bottom: 0;
+            margin-top: $page-spacing-sm * 2;
+            margin-bottom: $page-spacing-sm * 2;
         }
 
         @media(min-width:768px) {
-            padding: $page-spacing-md 0;
+            margin: $page-spacing-md 0;
 
             &:first-child {
-                padding-top: $page-spacing-md * 2;
+                margin-top: $page-spacing-md * 2;
+                margin-bottom: $page-spacing-md * 2;
             }
+        }
 
-            &:not(:last-child) {
-                margin-bottom: $page-spacing-md;
+        .section-heading-row {
+            margin-bottom: $page-spacing-sm;
+
+            @media(min-width:768px) {
+                margin-bottom: $page-spacing-md * 2;
             }
         }
 
@@ -47,6 +48,10 @@
             *:last-child {
                 margin-bottom: 0;
             }
+        }
+
+        & .col > *:last-child {
+            margin-bottom: 0;
         }
     }
 }
