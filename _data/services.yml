@@ -4,13 +4,13 @@ service_categories:
     label: Website
     icon: fas fa-tv
     description: <p>Our website offerings provide your small business or creative endeavor with a personalized space on the internet to advertise your services, showcase your productions, and provide a knowledgebase for your clients.</p>
-    why: <p>Be available to the world 24/7 with a website. Take control of your time by off-loading the common tasks of service listings, lead-generation, and client engagement</p>
+    why: <p>Engage with clients and customers 24 hours a day with your own customized web site. Take control of your time by off-loading the common tasks of service listings, lead-generation, and client engagement with an always-on web portal.</p>
   
   - title: "Communication"
     id: communication
     label: Communication
     icon: fas fa-network-wired    
-    description: <p>These packages include email, chat, and personalized social network setup and training. We also provide account setup on all of the most popular social media platforms (FaceBook, Twitter, Instagram, etc).</p>
+    description: <p>These packages include email, chat, and personalized social network setup and training. We also provide account setup on all of the most popular social media platforms (Facebook, Twitter, Instagram, etc).</p>
     why: <p>Our communcation packages set you up for success with industry standard technology to make sure you're always in touch with your team and clients.</p>
   
   - title: "eCommerce"
