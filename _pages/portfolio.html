@@ -2,7 +2,7 @@
 permalink: /portfolio/
 layout: page
 external_id: portfolio
-main_content_class: portfolio
+id: portfolio-page
 ---
 <!-- Assign Variables -->
 {% assign category = site.data.designs | where: "external_id", "designs" | first %}
@@ -33,20 +33,20 @@ main_content_class: portfolio
 %}
 {% endcomment %}
 
-<main>
+<main id="{{ page.id }}">
 
   <!-- Page Headering -->
   <div class="page-section">
     <div class="container">
       <div class="row">
           <div class="col">
+            <h1 class="page-title">{{ site.data.sitetext.portfolio.title }}</h1>
             <p class="page-description">{{ site.data.sitetext.portfolio.description }}</p>
           </div>
       </div>
     </div>
   </div>
 
-  <!-- Functional Designs -->
   <div class="page-section">
     <div class="container">
 
@@ -54,7 +54,8 @@ main_content_class: portfolio
         {% assign services_url = "" %}
         {% assign examples_url = "" %}
 
-        <div class="service-category mb-4">
+        <div class="service-category">
+
           <!-- Section Heading -->
           <div class="row section-heading-row mb-4">
             <div class="col">
@@ -71,15 +72,15 @@ main_content_class: portfolio
           </div>
 
           <!-- Section Description and Image -->
-          <div class="row mb-4">
-            <div class="col-12 col-md-6 mb-4 mb-md-0">
+          <div class="row">
+            <div class="service-information col-12 col-md-6 mb-4 mb-md-0">
               <div>{{ service_category.why }}</div>
-              <div>{{ service_category.description }}</div>
+              <div class="service-description">{{ service_category.description }}</div>
             </div>
 
-            <div class="col-12 col-md-6 mb-4 d-flex flex-column justify-content-center align-items-center">
-              <a class="cta-btn btn btn-tertiary w-75 w-sm-100 p-3 mb-2" href="{{ services_url }}">
-                View {{ service_category.title }}
+            <div class="col-12 col-md-6 d-flex flex-column justify-content-center align-items-center">
+              <a class="cta-btn btn btn-tertiary w-100 p-3 mb-2" href="{{ services_url }}">
+                View {{ service_category.label }} Services
               </a>
               <a href="{{ examples_url }}" class="text-center hide-link">See examples</a>
             </div>
@@ -91,14 +92,15 @@ main_content_class: portfolio
   </div>
 
   <hr>
-  
+
   <!-- foot notes -->
   <div class="page-section">
     <div class="container">
       <div class="row">
         <div class="col">
-          <p>If you don't see exactly what you're looking for, <a data-bs-toggle="modal" data-bs-target="#contact-modal" href="#">reach out</a>, and we will get you moving on the next steps toward your solution.</p>
-          <p class="footnote"><i>* - If our incredibly low prices still seem out of budget, <a data-bs-toggle="modal" data-bs-target="#contact-modal" href="#">contact us.</a> We will help guide you to the right designer. Same high-quality guaranteed. Don't let anything hold you back building your dream.</i></p>
+          <p>Don't see exactly what you're looking for? <a data-bs-toggle="modal" data-bs-target="#contact-modal" href="#">Reach out</a>, and we will get you moving on the next steps toward your solution.</p>
+          <p class="footnote"><i>* - If our low rates still seem out of budget for your small enterprise, <a data-bs-toggle="modal" data-bs-target="#contact-modal" href="#">contact us.</a> We will work with you to discover the solution you need at the price you desire.</i></p>
+          <p class="text-center footnote"><i>Don't let anything hold you back building your dream.</i><br>- Team @ High Ground</p>
         </div>
       </div>
     </div>

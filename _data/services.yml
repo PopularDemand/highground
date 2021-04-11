@@ -1,26 +1,30 @@
 service_categories:
   - title: "Websites"
     id: websites
+    label: Website
     icon: fas fa-tv
     description: <p>Our website offerings provide your small business or creative endeavor with a personalized space on the internet to advertise your services, showcase your productions, and provide a knowledgebase for your clients.</p>
     why: <p>Be available to the world 24/7 with a website. Take control of your time by off-loading the common tasks of service listings, lead-generation, and client engagement</p>
   
   - title: "Communication"
     id: communication
+    label: Communication
     icon: fas fa-network-wired    
     description: <p>These packages include email, chat, and personalized social network setup and training. We also provide account setup on all of the most popular social media platforms (FaceBook, Twitter, Instagram, etc).</p>
     why: <p>Our communcation packages set you up for success with industry standard technology to make sure you're always in touch with your team and clients.</p>
   
   - title: "eCommerce"
     id: ecommerce
+    label: eCommerce
     icon: fas fa-store
     description: <p>Our eCommerce packages come with all the advantages of a website, along with online storefront setup and payment gateway to accept online payments.</p>
     why: <p>Get your merchandise in front of the <b>global</b> audience with our eCommerce website offerings.</p>
 
   - title: "And More"
     id: additional
+    label: More
     icon: fas fa-laptop-medical
-    description: <p>In addition to providing bulk packages of website creation, we also provide services for folks who need website updates, maintenance, or assistance with data handling, etc.</p>
+    description: <p>In addition to providing bulk packages of website creation, we also provide services for teams who need website updates, maintenance, assistance with data handling, and etc.</p>
     why: <p>Our network of copy-writers, data technicians, and account managers can further off-load some of the more nitty-gritty tasks of online business management, such as website maintenance, data management, and account management.</p>
 
 services:
