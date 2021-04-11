@@ -1,25 +1,27 @@
 service_categories:
   - title: "Websites"
+    id: websites
     icon: fas fa-tv
-    description: >
-      <p>Our website offerings provide your small business or creative endeavor with a personalized space on the internet to advertise your services, showcase your productions, and provide a knowledgebase for your clients.</p>
-      <p>Take control of your time by off-loading the common tasks of lead-generation and client engagement.</p>
+    description: <p>Our website offerings provide your small business or creative endeavor with a personalized space on the internet to advertise your services, showcase your productions, and provide a knowledgebase for your clients.</p>
+    why: <p>Be available to the world 24/7 with a website. Take control of your time by off-loading the common tasks of service listings, lead-generation, and client engagement</p>
+  
   - title: "Communication"
+    id: communication
     icon: fas fa-network-wired    
-    description: >
-      <p>Our communcation offerings set you up for success with industry standard communication technology to make sure you're always in touch with your team and clients.</p>
-      <p>Our packages include email, chat, and personalized social network set-up and training. We also provide account set-up on all of the most popular social media platforms (FaceBook, Twitter, Instagram, etc).</p>
-  - title: "e-Commerce"
+    description: <p>These packages include email, chat, and personalized social network setup and training. We also provide account setup on all of the most popular social media platforms (FaceBook, Twitter, Instagram, etc).</p>
+    why: <p>Our communcation packages set you up for success with industry standard technology to make sure you're always in touch with your team and clients.</p>
+  
+  - title: "eCommerce"
+    id: ecommerce
     icon: fas fa-store
-    description: >
-      <p>Get your merchandise in front of the <b>global</b> audience with our e-commerce website offerings.</p>
-      <p>Our e-commerce packages come with all the advantages of a website, along with store setup and payment gateway to accept online payments.</p>
+    description: <p>Our eCommerce packages come with all the advantages of a website, along with online storefront setup and payment gateway to accept online payments.</p>
+    why: <p>Get your merchandise in front of the <b>global</b> audience with our eCommerce website offerings.</p>
+
   - title: "And More"
+    id: additional
     icon: fas fa-laptop-medical
-    description: >
-      <p>In addition to providing bulk packages of website creation, we also provide services for folks who already have a website or business and are needing an update or assistance with data handling, etc.</p>
-      <p>Our network of copy-writers, data technicians, and account managers can further off-load some of the more nitty-gritty tasks of online business management, such as website maintenance, data management, and account management.</p>
-      <p>If you don't see exactly what you're looking for, <a data-bs-toggle="modal" data-bs-target="#contact-modal" href="#">reach out</a>, and we will get you moving on the next steps toward your solution.</p>
+    description: <p>In addition to providing bulk packages of website creation, we also provide services for folks who need website updates, maintenance, or assistance with data handling, etc.</p>
+    why: <p>Our network of copy-writers, data technicians, and account managers can further off-load some of the more nitty-gritty tasks of online business management, such as website maintenance, data management, and account management.</p>
 
 services:
   - id: business_website

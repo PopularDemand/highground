@@ -16,14 +16,6 @@
             }
         }
 
-        .section-heading-row {
-            margin-bottom: $page-spacing-sm;
-
-            @media(min-width:768px) {
-                margin-bottom: $page-spacing-md * 2;
-            }
-        }
-
         h2.section-heading {
             font-size: 40px;
             margin-top: 0;
