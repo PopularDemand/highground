@@ -5,34 +5,9 @@ external_id: portfolio
 id: portfolio-page
 ---
 <!-- Assign Variables -->
-{% assign category = site.data.designs | where: "external_id", "designs" | first %}
-{% assign header_title = category.header.title %}
 
-{% assign functional_designs = site.data.designs | where: "external_id", "functional_designs" | first %}
-{% assign aesthetic_designs = site.data.designs | where: "external_id", "aesthetic_designs" | first %}
-{% assign functional_designs_page = site.pages | where: "external_id", "functional_designs" | first %}
-{% assign functional_portfolio_page = site.pages | where: "external_id", "functional_portfolio" | first %}
-{% assign aesthetic_designs_page = site.pages | where: "external_id", "aesthetic_designs" | first %}
-{% assign aesthetic_portfolio_page = site.pages | where: "external_id", "aesthetic_portfolio" | first %}
-{% comment %}
-{% assign header_text = site.data.functional_designs.site_text.header.text %}
-{% assign header_subtext = site.data.functional_designs.site_text.header.subtext %}
-{% assign header_button = site.data.functional_designs.site_text.header.button %}
-{% assign header_button_link = site.data.functional_designs.site_text.header.button_link %}
-{% endcomment %}
-
-<!-- Rendered content -->
+<!-- Render Content -->
 <!-- contact modal rendered in default.html layout -->
-{% comment %}
-{% include masthead.html
-  title=header_title
-  text=header_text
-  subtext=header_subtext
-  button_text=header_button
-  button_link=header_button_link
-%}
-{% endcomment %}
-
 <main id="{{ page.id }}">
 
   <!-- Page Headering -->
@@ -51,7 +26,7 @@ id: portfolio-page
     <div class="container">
 
       {% for service_category in site.data.services.service_categories %}
-        {% assign services_url = "" %}
+        {% assign service_category_page = site.pages | where: "external_id", service_category.page_id | first %}
         {% assign examples_url = "" %}
 
         <div class="service-category">
@@ -79,10 +54,12 @@ id: portfolio-page
             </div>
 
             <div class="col-12 col-md-6 d-flex flex-column justify-content-center align-items-center">
-              <a class="cta-btn btn btn-tertiary w-100 p-3 mb-2" href="{{ services_url }}">
+              <a class="cta-btn btn btn-tertiary w-100 p-3 mb-2" href="{{ service_category_page.permalink }}">
                 View {{ service_category.label }} Services
               </a>
-              <a href="{{ examples_url }}" class="text-center hide-link">See examples</a>
+              {% if !examples_url.is_blank? %}
+                <a href="{{ examples_url }}" class="text-center hide-link">See examples</a>
+              {% endif %}
             </div>
           </div>
         </div>

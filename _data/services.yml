@@ -1,6 +1,7 @@
 service_categories:
   - title: "Websites"
     id: websites
+    page_id: portfolio_websites_page
     label: Website
     icon: fas fa-tv
     description: <p>Our website offerings provide your small business or creative endeavor with a personalized space on the internet to advertise your services, showcase your productions, and provide a knowledgebase for your clients.</p>
@@ -8,6 +9,7 @@ service_categories:
   
   - title: "Communication"
     id: communication
+    page_id: portfolio_communication_page
     label: Communication
     icon: fas fa-network-wired    
     description: <p>These packages include email, chat, and personalized social network setup and training. We also provide account setup on all of the most popular social media platforms (Facebook, Twitter, Instagram, etc).</p>
@@ -15,6 +17,7 @@ service_categories:
   
   - title: "eCommerce"
     id: ecommerce
+    page_id: portfolio_ecommerce_page
     label: eCommerce
     icon: fas fa-store
     description: <p>Our eCommerce packages come with all the advantages of a website, along with online storefront setup and payment gateway to accept online payments.</p>
@@ -22,6 +25,7 @@ service_categories:
 
   - title: "And More"
     id: additional
+    page_id: portfolio_additional_page
     label: More
     icon: fas fa-laptop-medical
     description: <p>In addition to providing bulk packages of website creation, we also provide services for teams who need website updates, maintenance, assistance with data handling, and etc.</p>
