@@ -3,4 +3,10 @@ permalink: /portfolio/communication/
 layout: page
 external_id: portfolio_communication_page
 id: portfolio-communication-page
+service_category_id: communication
 ---
+
+{% assign service_category = site.data.services.service_categories| where: "id", page.service_category_id | first %}
+{% assign services = site.data.services.services | where: "service_category_id", page.service_category_id %}
+
+{% include service_category_page.html category=service_category services=services %}

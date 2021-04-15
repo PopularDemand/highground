@@ -12,14 +12,14 @@ id: portfolio-page
 
   <!-- Page Headering -->
   <div class="page-section">
-    <div class="container">
-      <div class="row">
-          <div class="col">
-            <h1 class="page-title">{{ site.data.sitetext.portfolio.title }}</h1>
-            <p class="page-description">{{ site.data.sitetext.portfolio.description }}</p>
+      <div class="container">
+          <div class="row">
+              <div class="col">
+                  <h1 class="page-title">{{ site.data.sitetext.portfolio.title }}</h1>
+                  <p class="page-description">{{ site.data.sitetext.portfolio.description }}</p>
+              </div>
           </div>
       </div>
-    </div>
   </div>
 
   <div class="page-section">
@@ -57,9 +57,9 @@ id: portfolio-page
               <a class="cta-btn btn btn-tertiary w-100 p-3 mb-2" href="{{ service_category_page.permalink }}">
                 View {{ service_category.label }} Services
               </a>
-              {% if !examples_url.is_blank? %}
+              {% unless examples_url.is_blank? %}
                 <a href="{{ examples_url }}" class="text-center hide-link">See examples</a>
-              {% endif %}
+              {% endunless %}
             </div>
           </div>
         </div>

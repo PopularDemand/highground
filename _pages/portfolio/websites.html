@@ -6,41 +6,7 @@ id: portfolio-websites-page
 service_category_id: websites
 ---
 
-{% assign service_category = site.data.services.service_categories, where: "id", page.service_category_id | first %}
+{% assign service_category = site.data.services.service_categories| where: "id", page.service_category_id | first %}
 {% assign services = site.data.services.services | where: "service_category_id", page.service_category_id %}
 
-<main id="{{ page.id }}">
-	<div class="page-section">
-		<div class="container">
-			<div class="row">
-				<div class="col">
-					<h1 class="page-title">
-						{{ service_category.title }}
-					</h1>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div class="page-section">
-	    <div class="container mb-4">
-	        <div class="mb-4 service-list">
-	            {% include services_list.html services=services %}
-	        </div>
-
-	        <div class="row justify-content-center">
-	            <a class="cta-btn btn btn-tertiary p-3 w-75" data-bs-toggle="modal" data-bs-target="#contact-modal" href="#">Contact us to get started today</a>
-	        </div>
-	    </div>
-	</div>
-
-	<div class="page-section">
-		<div class="container">
-			<div class="row">
-				<div class="col">
-					<p class="footnote"><i>* - If our low rates still seem out of budget for your small enterprise, <a data-bs-toggle="modal" data-bs-target="#contact-modal" href="#">contact us.</a> We will work with you to discover the solution you need at the price you desire.</i></p>
-				</div>
-			</div>
-		</div>
-	</div>
-</main>
+{% include service_category_page.html category=service_category services=services %}
