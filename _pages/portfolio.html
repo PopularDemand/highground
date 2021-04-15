@@ -36,10 +36,6 @@ id: portfolio-page
             <div class="col">
               <div class="heading-bar text-center">
                 <h2 class="section-heading" id="functional-designs">
-                  <span class="fa-stack fa-1x">
-                    <i class="fas fa-circle fa-stack-1x text-primary"></i>
-                    <i class="{{ service_category.icon | default: "fas fa-shopping-cart" }} fa-stack-1x fa-inverse"></i>
-                  </span><br>
                   {{ service_category.title }}
                 </h2>
               </div>
@@ -54,6 +50,10 @@ id: portfolio-page
             </div>
 
             <div class="col-12 col-md-6 d-flex flex-column justify-content-center align-items-center">
+              <span class="fa-stack fa-3x">
+                <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                <i class="{{ service_category.icon | default: "fas fa-shopping-cart" }} fa-stack-1x fa-inverse"></i>
+              </span><br>
               <a class="cta-btn btn btn-tertiary w-100 p-3 mb-2" href="{{ service_category_page.permalink }}">
                 View {{ service_category.label }} Services
               </a>
@@ -76,7 +76,6 @@ id: portfolio-page
       <div class="row">
         <div class="col">
           <p>Don't see exactly what you're looking for? <a data-bs-toggle="modal" data-bs-target="#contact-modal" href="#">Reach out</a>, and we will get you moving on the next steps toward your solution.</p>
-          <p class="footnote"><i>* - If our low rates still seem out of budget for your small enterprise, <a data-bs-toggle="modal" data-bs-target="#contact-modal" href="#">contact us.</a> We will work with you to discover the solution you need at the price you desire.</i></p>
           <p class="text-center footnote"><i>Don't let anything hold you back building your dream.</i><br>- Team @ High Ground</p>
         </div>
       </div>

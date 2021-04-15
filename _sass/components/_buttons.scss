@@ -15,6 +15,11 @@ button, .btn {
   }
 }
 
+.btn.flat {
+  box-shadow: none;
+  border: none;
+}
+
 .btn-xl {
   font-size: 1.4em;
   padding: 18px;

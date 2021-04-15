@@ -34,39 +34,16 @@ service_categories:
 services:
   - id: business_website
     external_id: business_website
-    image:
-      src: /assets/img/service_categories/oneself_dotdash_logos.jpg
-      alt: oneself and dotdash logos
-    header:
-      title: <div>Business Designs</div>
-      background_img:
+    service_category_id: websites
+    name: Website Basic
     description: >
       <p>Business designs are productions made for use in internet, application, or visual presentation formats.</p>
-      <p>For small businesses, entrepreneurs, and creators seeking to develop an online presence, we offer <a data-bs-toggle="modal" data-bs-target="#contact-modal" href="#">Logo, Web Interface, and Business Essentials</a> service bundles.</p>
-    short_desc: Business designs are for business and web purposes. If you need branding, logo, or business presentation graphics, start here!
-    why: Looking for new brand images? Looking to spruce up the ones you have? Just need business cards? Check out these business graphics deals.
-    examples:
-      - title: One Self
-        product: Logo Design, Web UI Design
-        description: Graphical interface for the One Self Mighty Network
-        url: https://oneself.mn.co
-        directory: oneself
-        collection_image:
-          src: /assets/img/functional_designs/oneself/gold_on_black_separate_os.png
-          alt: gold on black os
-        items:
-          - filename: /assets/img/functional_designs/oneself/circle_s_yellow_red_red.png
-            description: Flat color logo
-            alt: flat color yellow s in yellow circle red background
-    services:
-      - name: Basic Logo Package
-        description: We will create one logo and one combination mark for your business, app, or online brand.
-        included: Two (2) PNGs. Two (2) source files (web-safe SVGs) can be included for an addtional price. One (1) revision.
-        price_range: $50 flat rate
-        additional: If you need a different image format (JPG, WEBP, etc.), we will provide that in place of the PNGs or for an additional price.
-        image:
-          src: /assets/img/lovespresents_embroidery.jpg
-          alt: words loves presents embroidered on hat
+    included: Two (2) PNGs. Two (2) source files (web-safe SVGs) can be included for an addtional price. One (1) revision.
+    price_range: $50 flat rate
+    additional: If you need a different image format (JPG, WEBP, etc.), we will provide that in place of the PNGs or for an additional price.
+    image:
+      src: /assets/img/lovespresents_embroidery.jpg
+      alt: words loves presents embroidered on hat
   - id: ecommerce
     external_id: ecommerce
   - id: communications
