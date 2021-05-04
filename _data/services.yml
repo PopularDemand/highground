@@ -4,16 +4,29 @@ service_categories:
     page_id: portfolio_websites_page
     label: Website
     icon: fas fa-tv
-    description: <p>Our website offerings provide your small business or creative endeavor with a personalized space on the internet to advertise your services, showcase your productions, and provide a knowledgebase for your clients.</p>
-    why: <p>Engage with clients and customers 24 hours a day with your own customized web site. Take control of your time by off-loading the common tasks of service listings, lead-generation, and client engagement with an always-on web portal.</p>
-  
+    description: <p>We will provide you with a personalized space on the internet to advertise your services, showcase your productions, and provide a knowledgebase for your clients.</p>
+    short_desc: <p>We provide custom website creation and website maintenance packages.</p>
+    why: <p>Websites create credibility for your business. Keep your clients and fans up to date with your latest products and services.
+    great_for:
+      - brand credibility
+      - client engagement
+      - lead generation
+      - knowledge bases
+#  Engage with clients and customers 24 hours a day with your own customized web site.
+
   - title: "Communication"
     id: communication
     page_id: portfolio_communication_page
     label: Communication
-    icon: fas fa-network-wired    
-    description: <p>These packages include email, chat, and personalized social network setup and training. We also provide account setup on all of the most popular social media platforms (Facebook, Twitter, Instagram, etc).</p>
-    why: <p>Our communcation packages set you up for success with industry standard technology to make sure you're always in touch with your team and clients.</p>
+    icon: fas fa-network-wired
+    description: <p>These packages include email, chat, and personalized social network setup and training. As well as account setup on all of the most popular social media platforms (Facebook, Twitter, Instagram, etc).</p>
+    short_desc: <p>Email, chat, internal social network. If it helps you stay in touch with your team, we can help you implement it.</p>
+    why: <p>Communication is key in all walks of life. Set yourself up for success with industry standard technology to make sure you're always in touch with your team and clients.</p>
+    great_for:
+      - email
+      - chat
+      - social media
+      - social network
   
   - title: "eCommerce"
     id: ecommerce
@@ -21,20 +34,32 @@ service_categories:
     label: eCommerce
     icon: fas fa-store
     description: <p>Our eCommerce packages come with all the advantages of a website, along with online storefront setup and payment gateway to accept online payments.</p>
-    why: <p>Get your merchandise in front of the <b>global</b> audience with our eCommerce website offerings.</p>
+    short_desc: <p>Get an online storefront to offer your products and services to buyers 24 hours a day.</p>
+    why: <p>Online selling is a projected to be a 5.4 $trillion dollar industry in 2022. Get your merchandise in front of the world-wide audience with our eCommerce website offerings.</p>
+    great_for:
+      - sell online
+      - physical products
+      - digital products
 
-  - title: "And More"
+  - title: "Data and More"
     id: additional
     page_id: portfolio_additional_page
     label: More
     icon: fas fa-laptop-medical
     description: <p>In addition to providing bulk packages of website creation, we also provide services for teams who need website updates, maintenance, assistance with data handling, and etc.</p>
+    short_desc: <p>Digital and web-based services to help you maintain your business and website.</p>
     why: <p>Our network of copy-writers, data technicians, and account managers can further off-load some of the more nitty-gritty tasks of online business management, such as website maintenance, data management, and account management.</p>
+    great_for:
+      - site maintenance
+      - copywriting
+      - data management
+      - custom software
 
 services:
-  - id: business_website
-    external_id: business_website
-    service_category_id: websites
+  - id: website_basic
+    external_id: website_basic
+    service_category_ids:
+      - websites
     name: Website Basic
     description: >
       <p>Business designs are productions made for use in internet, application, or visual presentation formats.</p>

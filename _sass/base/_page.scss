@@ -4,26 +4,26 @@
     }
 
     .page-section {
-        margin: $page-spacing-sm 0;
+        margin: $spacing-sm 0;
 
         &:first-child {
-            margin-top: $page-spacing-sm * 2;
-            margin-bottom: $page-spacing-sm * 2;
+            margin-top: $spacing-sm * 2;
+            margin-bottom: $spacing-sm * 2;
         }
 
         @media(min-width:768px) {
-            margin: $page-spacing-md 0;
+            margin: $spacing-md 0;
 
             &:first-child {
-                margin-top: $page-spacing-md * 2;
-                margin-bottom: $page-spacing-md * 2;
+                margin-top: $spacing-md * 2;
+                margin-bottom: $spacing-md * 2;
             }
         }
 
         h2.section-heading {
             font-size: 32px;
             margin-top: 0;
-            margin-bottom: $page-spacing-sm;
+            margin-bottom: $spacing-sm;
         }
 
         h3.section-subheading {

@@ -2,7 +2,7 @@
 body {
   overflow-x: hidden;
   @include body-font;
-  // padding-top: $approx-header-height-desktop;
+  padding-top: $approx-header-height-desktop;
 
   @media only screen and (max-width: 991px) {
     padding-top: $approx-header-height-mobile;
@@ -117,6 +117,10 @@ h6 {
 /****************
 // Bootstrap Overrides
 /***************/
+
+.container {
+  max-width: 1140px;
+}
 .modal {
     padding-right: 0px !important;
 }
