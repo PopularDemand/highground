@@ -25,7 +25,7 @@ id: portfolio-page
   <div class="page-section">
     <div class="container">
 
-      {% for service_category in site.data.services.service_categories %}
+      {% for service_category in site.data.service_categories %}
         {% assign service_category_page = site.pages | where: "external_id", service_category.page_id | first %}
         {% assign examples_url = '' %}
 
