@@ -16,6 +16,7 @@ theme: jekyll-agency
 url    : "" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "" # the subpath of your site, e.g. /blog
 include: ["_pages"]
+collections_dir: "collections"
 
 title      : HighGround.Tech
 email      : alexa@highground.tech
@@ -30,7 +31,10 @@ analytics:
   google: #Google Analytics tracking code here
 
 collections:
-  portfolio:
+  service_categories:
+    output: true
+    permalink: /portfolio/:title
+
 
 markdown: kramdown
 
