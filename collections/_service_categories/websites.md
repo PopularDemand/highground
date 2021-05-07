@@ -1,7 +1,8 @@
 ---
 title: Websites
 id: websites
-layout: page
+layout: service_category
+portfolio_order: 1
 label: Website
 icon: fas fa-tv
 description: <p>We will provide you with a personalized space on the internet to advertise your services, showcase your productions, and provide a knowledgebase for your clients.</p>
@@ -13,5 +14,3 @@ great_for:
   - lead generation
   - knowledge bases
 ---
-
-# this is a title

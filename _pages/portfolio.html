@@ -25,8 +25,8 @@ id: portfolio-page
   <div class="page-section">
     <div class="container">
 
-      {% for service_category in site.data.service_categories %}
-        {% assign service_category_page = site.pages | where: "external_id", service_category.page_id | first %}
+      {% assign ordered_categories = site.service_categories | sort: 'portfolio_order' %}
+      {% for service_category in ordered_categories %}
         {% assign examples_url = '' %}
 
         <div class="service-category card mb-5 p-4">
@@ -41,7 +41,7 @@ id: portfolio-page
               {{ service_category.why | markdownify }}
 
               <div class="d-none d-md-flex justify-content-center">
-                <a class="cta-btn btn btn-tertiary w-100 p-3 mb-2" href="{{ service_category_page.permalink }}">
+                <a class="cta-btn btn btn-tertiary w-100 p-3 mb-2" href="{{ service_category.url }}">
                   View {{ service_category.label }} Services
                 </a>
                 {% unless examples_url == empty %}
