@@ -30,5 +30,9 @@ nav:
   # - title: "Team"
   #   section: team
 
+  - title: "Design Studio"
+    url: https://design.highground.tech
+    target: _blank
+
   - title: "Get Started"
     section: contact
