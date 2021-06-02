@@ -2,7 +2,7 @@
 title: "eCommerce"
 id: ecommerce
 external_id: ecommerce
-layout: page
+layout: service_category
 portfolio_order: 3
 label: eCommerce
 icon: fas fa-store
@@ -14,5 +14,3 @@ great_for:
   - physical products
   - digital products
 ---
-
-# this is ecommerce

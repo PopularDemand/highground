@@ -2,7 +2,7 @@
 title: "Data and More"
 id: additional
 external_id: additional
-layout: page
+layout: service_category
 portfolio_order: 4
 label: More
 icon: fas fa-laptop-medical
@@ -15,5 +15,3 @@ great_for:
   - data management
   - custom software
 ---
-
-# this is data and more

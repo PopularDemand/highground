@@ -2,7 +2,7 @@
 title: "Communication"
 id: communication
 exteral_id: communication
-layout: page
+layout: service_category
 portfolio_order: 2
 label: Communication
 icon: fas fa-network-wired
@@ -15,5 +15,3 @@ great_for:
   - social media
   - social network
 ---
-
-# this is communication
