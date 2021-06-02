@@ -27,16 +27,14 @@ id: portfolio-page
 
       {% assign ordered_categories = site.service_categories | sort: 'portfolio_order' %}
       {% for service_category in ordered_categories %}
-        {% assign examples_url = '' %}
 
         <div class="service-category card mb-5 p-4">
-
           <!-- Section Description and Image -->
           <div class="row">
             <div class="service-information col-12 col-md-8">
               <h2 class="section-heading" id="functional-designs">
-                  {{ service_category.title }}
-                </h2>
+                {{ service_category.title }}
+              </h2>
 
               {{ service_category.why | markdownify }}
 
@@ -44,9 +42,11 @@ id: portfolio-page
                 <a class="cta-btn btn btn-tertiary w-100 p-3 mb-2" href="{{ service_category.url }}">
                   View {{ service_category.label }} Services
                 </a>
+                {% comment %}
                 {% unless examples_url == empty %}
                   <a href="{{ examples_url }}" class="text-center hide-link">See examples</a>
                 {% endunless %}
+                {% endcomment %}
               </div>
             </div>
 
@@ -65,18 +65,20 @@ id: portfolio-page
               </div>
 
               <div class="d-flex d-md-none justify-content-center">
-                <a class="cta-btn btn btn-tertiary w-100 p-3 mb-2" href="{{ service_category_page.permalink }}">
+                <a class="cta-btn btn btn-tertiary w-100 p-3 mb-2" href="{{ service_category.url }}">
                   View {{ service_category.label }} Services
                 </a>
+                {% comment %}
                 {% unless examples_url == empty %}
                   <a href="{{ examples_url }}" class="text-center hide-link">See examples</a>
                 {% endunless %}
+                {% endcomment %}
               </div>
             </div>
           </div>
+          
         </div>
       {% endfor %}
-
     </div>
   </div>
 
