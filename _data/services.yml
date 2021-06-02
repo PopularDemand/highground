@@ -5,25 +5,127 @@
     - websites
   name: Website Basic
   description: >
-    <p>Business designs are productions made for use in internet, application, or visual presentation formats.</p>
-  included: Two (2) PNGs. Two (2) source files (web-safe SVGs) can be included for an addtional price. One (1) revision.
-  price_range: $50 flat rate
-  additional: If you need a different image format (JPG, WEBP, etc.), we will provide that in place of the PNGs or for an additional price.
+    <p>We will produce a branded website for you. Perfect for service providers and individuals seeking first time web presence.</p>
+  included: One website with three (3) pages and a contact form for collecting leads.
+  price_range: $300 - $500
+  additional: Additional pages can be added for $50. If you require graphic design or web design services, we can help with that as well!
   image:
     src: /assets/img/lovespresents_embroidery.jpg
     alt: words loves presents embroidered on hat
 
-- id: ecommerce
-  external_id: ecommerce
+- id: wordpress_site
+  external_id: wordpress_site
+  service_category_ids:
+    - websites
+  name: WordPress Website
+  description: >
+    <p>We will produce a business or personal WordPress website. WordPress is an industry standard solution for business and personal use. It is ideal for those who plan to produce blog content and/or include dynamic features on their site.</p>
+  included: One WordPress site with four (4) pages. One-on-one training on WordPress content creation and routine maintenance.
+  price_range: $300 - $700
+  additional: WordPress hosting and plugins (if plugins are required) are ongoing services that generally require a regular service fees. Additional pages can be added for $50 each. If you require graphic design or web design services, we can help with that as well!
+  image:
+    src: /assets/img/lovespresents_embroidery.jpg
+    alt: words loves presents embroidered on hat
 
-- id: communications
-  external_id: communications
+- id: shopify_site
+  external_id: shopify_site
+  service_category_ids:
+    - websites
+    - ecommerce
+  name: Shopify E-commerce
+  description: >
+    <p>We will produce an e-commerce store on the Shopify e-commerce platform. Perfect for physical products, digital products, print-on-demand graphic designers, and dropshipping entrepreneurs.</p>
+  included: One Shopify e-commerce store with three (3) content pages. Initial product catalog setup (up to 5 items) One-on-one training on Shopify store management.
+  price_range: $450 - 800
+  additional: The Shopify platform requires a monthly service fee (as low as $29/month.) Additional products or pages can be added for an additional price. If you require graphic design or web design services, we can help with that as well!
+  image:
+    src: /assets/img/lovespresents_embroidery.jpg
+    alt: words loves presents embroidered on hat
 
-- id: tech_maintainance
-  external_id: tech_maintainance
+- id: woocommerce_site
+  external_id: woocommerce_site
+  service_category_ids:
+    - websites
+    - ecommerce
+  name: WooCommerce E-commerce
+  description: >
+    <p>We will produce an e-commerce store on the WooCommerce platform. Perfect for all types of products, print-on-demand, and dropshipping solutions. WooCommerce is built with WordPress, so any personal experience with WordPress will be useful and transferrable.</p>
+  included: One WooCommerce e-commerce store with three (3) content pages. Initial product catalog setup (up to 5 items) One-on-one training on WooCommerce store management.
+  price_range: $450 - 800
+  additional: WordPress hosting and plugins (if plugins are required) are ongoing services that generally require a regular service fees. Additional pages can be added for $50 each. If you require graphic design or web design services, we can help with that as well!
+  image:
+    src: /assets/img/lovespresents_embroidery.jpg
+    alt: words loves presents embroidered on hat
+
+- id: mighty_network
+  external_id: mighty_network
+  service_category_ids:
+    - communication
+  name: Mighty Network Setup
+  description: >
+    <p>Mighty Network is a full-featured custom social network platform. It provides a space to gather fans, community groups, or niche interest communities into one place. Host discussions, event, courses, and monetize your efforts with this platform.</p>
+  included: One Mighty Network forum setup. Initial site graphics (5 images) and suggested text assets included. One-on-one training and video support.
+  price_range: $175
+  additional: Additional images and copywriting available.
+  image:
+    src: /assets/img/lovespresents_embroidery.jpg
+    alt: words loves presents embroidered on hat
+
+- id: slack
+  external_id: slack
+  service_category_ids:
+    - communication
+  name: Slack Setup
+  description: >
+    <p>Slack is the industry standard solution for real-time communications between team members and client-bases. It provides chat features, document sharing, and many free software integrations to increase team communication and productivity. </p>
+  included: One Slack channel setup. One-on-one Slack management training.
+  price_range: $89
+  additional: 
+  image:
+    src: /assets/img/lovespresents_embroidery.jpg
+    alt: words loves presents embroidered on hat
+
+- id: zoom
+  external_id: zoom
+  service_category_ids:
+    - communication
+  name: Zoom Setup
+  description: >
+    <p>Zoom is an industry standard video-conferencing tool. A personal Zoom room provides you with the flexibility to speak with individuals around the world in one place. Zoom's additional hosting features make it a great decision for business leaders, course teachers, and those building and maintaining their own budding fanbase.</p>
+  included: One Zoom account setup. One-on-one Zoom settings and host training.
+  price_range: $100
+  additional: 
+  image:
+    src: /assets/img/lovespresents_embroidery.jpg
+    alt: words loves presents embroidered on hat
+
+- id: data_entry
+  external_id: data_entry
+  service_category_ids:
+    - additional
+  name: Data Entry
+  description: >
+    <p>Running a business generates data! We will help get your data parsed, organized and entered into a sustainable fashion.</p>
+  included: A data set parsed and organized into an spreadsheet or similar organization tool.
+  price_range: $50 - 300
+  additional: Contact us if you would prefer a custom database solution. Databases are better for a dataset you will be adding to and manipulating often, and may incur additional hosting fees.
+  image:
+    src: /assets/img/lovespresents_embroidery.jpg
+    alt: words loves presents embroidered on hat
 
 - id: consultation
   external_id: consultation
-
-- id: data_management
-  external_id: data_management
+  service_category_ids:
+    - websites
+    - communication
+    - additional
+    - ecommerce
+  name: Consultation
+  description: >
+    <p>We provide consultation for website, web development, web design... Any web questions you may have! If you do or don't have the solution in mind yet, we can help you refine the details into a plan you feel confident in.</p>
+  included: One hour consultation with the High Ground Tech Team.
+  price_range: $80 flat rate
+  additional: We're always happy to help.
+  image:
+    src: /assets/img/lovespresents_embroidery.jpg
+    alt: words loves presents embroidered on hat
