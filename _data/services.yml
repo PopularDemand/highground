@@ -10,8 +10,8 @@
   price_range: $300 - $500
   additional: Additional pages can be added for $50. If you require graphic design or web design services, we can help with that as well!
   image:
-    src: /assets/img/lovespresents_embroidery.jpg
-    alt: words loves presents embroidered on hat
+    src: /assets/img/computer_cropped.jpg
+    alt: computer screen
 
 - id: wordpress_site
   external_id: wordpress_site
@@ -24,8 +24,8 @@
   price_range: $300 - $700
   additional: WordPress hosting and plugins (if plugins are required) are ongoing services that generally require a regular service fees. Additional pages can be added for $50 each. If you require graphic design or web design services, we can help with that as well!
   image:
-    src: /assets/img/lovespresents_embroidery.jpg
-    alt: words loves presents embroidered on hat
+    src: /assets/img/wordpress_cropped.jpg
+    alt: wordpress logo
 
 - id: shopify_site
   external_id: shopify_site
@@ -39,7 +39,7 @@
   price_range: $450 - 800
   additional: The Shopify platform requires a monthly service fee (as low as $29/month.) Additional products or pages can be added for an additional price. If you require graphic design or web design services, we can help with that as well!
   image:
-    src: /assets/img/lovespresents_embroidery.jpg
+    src: /assets/img/loves_presents_embroidery_cropped.jpg
     alt: words loves presents embroidered on hat
 
 - id: woocommerce_site
@@ -54,8 +54,8 @@
   price_range: $450 - 800
   additional: WordPress hosting and plugins (if plugins are required) are ongoing services that generally require a regular service fees. Additional pages can be added for $50 each. If you require graphic design or web design services, we can help with that as well!
   image:
-    src: /assets/img/lovespresents_embroidery.jpg
-    alt: words loves presents embroidered on hat
+    src: /assets/img/woocommerce_cropped.jpg
+    alt: woo commerce logo
 
 - id: mighty_network
   external_id: mighty_network
@@ -63,13 +63,13 @@
     - communication
   name: Mighty Network Setup
   description: >
-    <p>Mighty Network is a full-featured custom social network platform. It provides a space to gather fans, community groups, or niche interest communities into one place. Host discussions, event, courses, and monetize your efforts with this platform.</p>
-  included: One Mighty Network forum setup. Initial site graphics (5 images) and suggested text assets included. One-on-one training and video support.
+    <p>Mighty Networks is a full-featured custom social network platform. It provides a space to gather fans, community groups, or niche interest communities into one place. Start building your Mighty Network now. Host discussions, event, courses, and monetize your efforts with this platform.</p>
+  included: One Mighty Network community setup. Initial site graphics (5 images) and suggested text assets included. One-on-one training and video support.
   price_range: $175
-  additional: Additional images and copywriting available.
+  additional: Additional images and copywriting available. Mighty Network plans range from free to $98/month.
   image:
-    src: /assets/img/lovespresents_embroidery.jpg
-    alt: words loves presents embroidered on hat
+    src: /assets/img/mighty_networks_cropped.jpg
+    alt: mighty networks logo
 
 - id: slack
   external_id: slack
@@ -79,11 +79,11 @@
   description: >
     <p>Slack is the industry standard solution for real-time communications between team members and client-bases. It provides chat features, document sharing, and many free software integrations to increase team communication and productivity. </p>
   included: One Slack channel setup. One-on-one Slack management training.
-  price_range: $89
+  price_range: $129
   additional: 
   image:
-    src: /assets/img/lovespresents_embroidery.jpg
-    alt: words loves presents embroidered on hat
+    src: /assets/img/slack_cropped.jpg
+    alt: slack logo
 
 - id: zoom
   external_id: zoom
@@ -93,11 +93,11 @@
   description: >
     <p>Zoom is an industry standard video-conferencing tool. A personal Zoom room provides you with the flexibility to speak with individuals around the world in one place. Zoom's additional hosting features make it a great decision for business leaders, course teachers, and those building and maintaining their own budding fanbase.</p>
   included: One Zoom account setup. One-on-one Zoom settings and host training.
-  price_range: $100
+  price_range: $129
   additional: 
   image:
-    src: /assets/img/lovespresents_embroidery.jpg
-    alt: words loves presents embroidered on hat
+    src: /assets/img/zoom_cropped.jpg
+    alt: zoom logo
 
 - id: data_entry
   external_id: data_entry
@@ -110,8 +110,22 @@
   price_range: $50 - 300
   additional: Contact us if you would prefer a custom database solution. Databases are better for a dataset you will be adding to and manipulating often, and may incur additional hosting fees.
   image:
-    src: /assets/img/lovespresents_embroidery.jpg
-    alt: words loves presents embroidered on hat
+    src: /assets/img/high_ground_cropped.jpg
+    alt: high ground tech co logo
+
+- id: copywriting
+  external_id: copywriting
+  service_category_ids:
+    - additional
+  name: Copywriting
+  description: >
+    <p>Our team of copywriters will provide the perfect text, figures, and captions for your next website or offline writing project. No need to spend your time with the gritty details of grammar, punctuation, and tonality, we'll take care of it for you.</p>
+  included: A data set parsed and organized into an spreadsheet or similar organization tool.
+  price_range: $50 - 300
+  additional: Approx. $60 per 500 words or one web page. We also offer writing for paper materials such as posters and pamphlets.
+  image:
+    src: /assets/img/high_ground_cropped.jpg
+    alt: high ground tech co logo
 
 - id: consultation
   external_id: consultation
@@ -123,9 +137,9 @@
   name: Consultation
   description: >
     <p>We provide consultation for website, web development, web design... Any web questions you may have! If you do or don't have the solution in mind yet, we can help you refine the details into a plan you feel confident in.</p>
-  included: One hour consultation with the High Ground Tech Team.
+  included: One hour consultation with the High Ground Tech Team. Follow-up communication regarding the proposed solution and next steps.
   price_range: $80 flat rate
-  additional: We're always happy to help.
+  additional: We're always happy to help you with your next web technology solution.
   image:
-    src: /assets/img/lovespresents_embroidery.jpg
-    alt: words loves presents embroidered on hat
+    src: /assets/img/high_ground_cropped.jpg
+    alt: high ground tech co logo

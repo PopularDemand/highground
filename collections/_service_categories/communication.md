@@ -1,7 +1,7 @@
 ---
 title: "Communication"
 id: communication
-exteral_id: communication
+external_id: communication
 layout: service_category
 portfolio_order: 2
 label: Communication
