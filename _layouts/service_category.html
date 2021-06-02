@@ -2,6 +2,7 @@
 layout: page
 ---
 
+
 <main id="{{ page.id }}">
 	<div class="page-section">
 		<div class="container">
@@ -18,14 +19,17 @@ layout: page
 	<div class="page-section">
 	    <div class="container mb-4">
 	        <div class="mb-4 service-list">
-	        	service list here
-	        	{% comment %}
-	            {% include services_list.html services=include.services %}
-	        	{% endcomment %}
+	        	{% for service in site.data.services %}
+	        		{% if service.service_category_ids contains page.external_id %}
+	        			{% include service_card.html service=service %}
+	        		{% endif %}
+	        	{% endfor %}
 	        </div>
 
 	        <div class="row justify-content-center">
-	            <a class="cta-btn btn btn-tertiary p-3 w-75" data-bs-toggle="modal" data-bs-target="#contact-modal" href="#">Contact us to get started today</a>
+	            <a class="cta-btn btn btn-tertiary p-3 w-75" data-bs-toggle="modal" data-bs-target="#contact-modal" href="#">
+	            	Contact us to get started today
+	            </a>
 	        </div>
 	    </div>
 	</div>
