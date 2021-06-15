@@ -10,7 +10,7 @@ layout: page
 			<div class="row">
 				<div class="col">
 					<h1 class="page-title">
-						{{ page.title }}this is an example page
+						Showcase: {{ page.title }}
 					</h1>
 					<p>{{ page.description }}</p>
 				</div>
@@ -20,8 +20,54 @@ layout: page
 
 	<div class="page-section">
 	    <div class="container mb-4">
-	        <div class="mb-4 service-list">
-	        	examples list
+	        <div class="mb-4 examples-list">
+	        	{% for example in site.data.examples %}
+	        		{% if example.service_category_ids contains page.service_category_id %}
+	        			<div class="row mb-4">
+	        			{% if forloop.index != 1 %}
+	        			<hr class="mb-4 mt-4">
+	        			{% endif %}
+
+	        			<div class="example-information col-12 col-md-8">
+	        			<h3 class="example-name">{{ example.title }}</h3>
+	        			<p class="example-description">{{ example.description }}</p>
+	        			<b>Services:</b><br>
+	        			<ul>
+	        				{% for service_id in example.service_ids %}
+		        				{% assign service = site.data.services | where: "external_id", service_id | first %}
+		        				<li>{{ service.name }}</li>
+	        				{% endfor %}
+	        			</ul>
+	        			</div>
+
+	        			<div class="col-12 col-md-4 ">
+	        			<div
+	        			  class="example-image-price"
+	        			  style="background-image: url({{ example.image.src }});"
+	        			>
+	        			  <!-- changes here should be made in .spacer.invisible below -->
+	        			  <div class="overlay" style="height:100px;"></div>
+
+	        			  <!-- necessary for .example-image-price height -->
+	        			  <div class="spacer invisible" style="height:100px;"></div>
+	        			</div>
+
+	        			<!-- CTA -->
+	        			<a class="cta-btn btn btn-tertiary flat" href="{{ example.link }}" target="_blank">View Now ⬈</a>
+	        			</div>
+	        			</div>
+
+	        			{% if example.additional %}
+	        			<div class="row">
+	        			<div class="col">
+	        			<p class="example-additional">
+	        				{{ example.additional }}
+	        			</p>
+	        			</div>
+	        			</div>
+	        			{% endif %}
+	        		{% endif %}
+	        	{% endfor %}
 	        </div>
 
 	        <div class="row justify-content-center">

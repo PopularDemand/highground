@@ -57,6 +57,20 @@
     src: /assets/img/woocommerce_cropped.jpg
     alt: woo commerce logo
 
+- id: web_application
+  external_id: web_application
+  service_category_ids:
+    - websites
+  name: Web Application
+  description: >
+    <p>We will produce a branded web application with customized functionality specific to your business needs. Perfect for service providers with a service idea that is not satisfied by off-the-shelf solutions.</p>
+  included: One web application with custom functionality you need. Three custom features included in the initial contract.
+  price_range: Consultation Needed
+  additional: Web applications will likely require recurring hosting and 3rd party service fees. Training on any created software included in the price.
+  image:
+    src: /assets/img/computer_cropped.jpg
+    alt: computer screen
+
 - id: mighty_network
   external_id: mighty_network
   service_category_ids:

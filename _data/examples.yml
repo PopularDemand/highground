@@ -2,7 +2,36 @@
 #ccfd consultation
 #iaab original
 #alexbradyorg
+- title: alexbrady.org
+  service_ids:
+    - web_application
+    - copywriting
+    - mighty_network
+    - slack
+    - data_entry
+  service_category_ids:
+    - websites
+    - additional
+  description: Primary website for alexbrady organization. This is a web application with membership site and other custom web tools/features.
+  link: "https://alexbrady.org"
+  image:
+    src: /assets/img/loves_presents_embroidery_cropped.jpg
+    alt: loves presents embroidered on hat
+
 #lovespresents
+- title: LovesPresents.com
+  service_ids:
+    - shopify_site
+    - copywriting
+  service_category_ids:
+    - websites
+    - ecommerce
+    - additional
+  description: Print-on-Demand ecommerce solution for graphic designers at LovesPresents.com. Includes shop setup, blog management, and graphic design. See our <b><a href="https://design.highground.tech" target="_blank">Design Studio</a></b> for design offerings.
+  link: "https://lovespresents.com"
+  image:
+    src: /assets/img/loves_presents_embroidery_cropped.jpg
+    alt: loves presents embroidered on hat
 #lp instagram
 #iaab instagram
 #iaab youtube
