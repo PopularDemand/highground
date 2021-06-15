@@ -1,6 +1,22 @@
 #ccfd
 #ccfd consultation
-#iaab original
+- title: Chokolate Chip Family Dolls
+  service_ids:
+    - wordpress_site
+    - woocommerce_site
+    - copywriting
+    - data_entry
+    - consultation
+  service_category_ids:
+    - websites
+    - ecommerce
+    - additional
+  description: Primary website and shop for the Chokolate Chip Family Dolls corporation. A site to sell homemade dolls built with WooCommerce and Wordpress.
+  link: "https://chokolatechipfamily.com/"
+  image:
+    src: /assets/img/ccfd_wordmark_brown.png
+    alt: chokolate chip family dolls wordmark
+
 #alexbradyorg
 - title: alexbrady.org
   service_ids:
@@ -12,31 +28,120 @@
   service_category_ids:
     - websites
     - additional
-  description: Primary website for alexbrady organization. This is a web application with membership site and other custom web tools/features.
+  description: Primary website for alexbrady organization. This is a web application with membership site and other custom web tools/features. Built using Ruby on Rails.
   link: "https://alexbrady.org"
   image:
-    src: /assets/img/loves_presents_embroidery_cropped.jpg
-    alt: loves presents embroidered on hat
+    src: /assets/img/alexbradyorg.png
+    alt: alexbrady organization workmark
+
+#iaab
+#iaab instagram
+#iaab youtube
+- title: "@iamalexbrady Brand"
+  service_ids:
+    - website_basic
+    - shopify_site
+    - social_media
+    - copywriting
+    - data_entry
+    - mighty_network
+    - slack
+  service_category_ids:
+    - websites
+    - additional
+    - communication
+  description: Brand website, social media accounts, and e-commerce site for the @iamalexbrady Brand. We provided shop setup, social media setup, copywriting, blog management, and maintenance.
+  additional: The Shopify site is no longer online, but viewable in an archived state.
+  link: "https://iamalexbrady.com"
+  additional_links:
+    - title: Twitter
+      url: https://twitter.com/iamalexbrady
+    - title: YouTube
+      url: https://youtube.iamalexbrady.com
+    - title: Instagram
+      url: https://instagram.com/iamalexbrady
+    - title: Reddit
+      url: https://reddit.com/iamalexbrady
+    - title: Shopify (archived)
+      url: "https://web.archive.org/web/*/iamalexbrady.com"
+  image:
+    src: /assets/img/eyes_ab_combo.png
+    alt: iamalexbrady brand wordmark
 
 #lovespresents
+#lp instagram
 - title: LovesPresents.com
   service_ids:
     - shopify_site
     - copywriting
+    - social_media
   service_category_ids:
     - websites
     - ecommerce
     - additional
   description: Print-on-Demand ecommerce solution for graphic designers at LovesPresents.com. Includes shop setup, blog management, and graphic design. See our <b><a href="https://design.highground.tech" target="_blank">Design Studio</a></b> for design offerings.
   link: "https://lovespresents.com"
+  additional_links:
+    - title: Instagram
+      url: https://instagram.com/lovespresents
+    - title: Twitter
+      url: https://twitter.com/lovespresents2
   image:
-    src: /assets/img/loves_presents_embroidery_cropped.jpg
+    src: /assets/img/lovespresents_embroidery.jpg
     alt: loves presents embroidered on hat
-#lp instagram
-#iaab instagram
-#iaab youtube
+
+#hgt
+#designstudio
 #hgt instagram
+- title: High Ground Tech Co.
+  service_ids:
+    - website_basic
+    - social_media
+    - copywriting
+  service_category_ids:
+    - websites
+    - additional
+  description: Primary business websites for High Ground Tech Co. and our accompanying Design Studio.
+  link: "https://highground.tech"
+  additional_links:
+    - title: Design Studio
+      url: https://design.highground.tech
+    - title: Instagram
+      url: https://instagram.com/highgroundtech
+    - title: Twitter
+      url: https://twitter.com/highgroundtech
+  image:
+    src: /assets/img/brand/heph_bw_double_border.png
+    alt: high ground tech company logo
+
 #smartpad consultation
 #smartpad static
-#designstudio
-#iaab datascrape
+- title: Smart Blanket
+  service_ids:
+    - consultation
+    - website_basic
+  service_category_ids:
+    - websites
+    - additional
+  description: We provided software consultation and architecture for a mobile application that interfaced with an IoT device. Also, one web landing page.
+  link: /assets/img/smartpad-landing.png
+  image:
+    src: /assets/img/smartpad_mobile.png
+    alt: smartpad mobile application
+
+- title: School for A Course in Miracles
+  service_ids:
+    - consultation
+    - slack
+    - mighty_network
+  service_category_ids:
+    - communication
+    - additional
+  description: We provided consultation on website navigation. Account and graphics set up on the Mighty Network and Slack platforms.
+  link: "https://sfacim.mn.co"
+  additional_links:
+    - title: Client Site (consultation only)
+      url: https://sfacim.org
+  image:
+    src: /assets/img/sfacim_logo.png
+    alt: school for a course in miracles logo

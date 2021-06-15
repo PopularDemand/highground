@@ -141,6 +141,21 @@
     src: /assets/img/high_ground_cropped.jpg
     alt: high ground tech co logo
 
+- id: social_media
+  external_id: social_media
+  service_category_ids:
+    - communication
+    - additional
+  name: Social Media
+  description: >
+    <p>We provide social media account set up and continued management for your business or brand.</p>
+  included: Account set up and regular management on the social media platform of your choice. See our <b><a href="design.highground.tech" target="_blank">Design Studio</a><b> if you require digital graphics and copywriting to post to the account.
+  price_range: $80 flat rate
+  additional: We offer monthly service plans for social media account management. We will post manage your postings on the social media platform and drive traffic to your page. Contact us for more.
+  image:
+    src: /assets/img/high_ground_cropped.jpg
+    alt: high ground tech co logo
+
 - id: consultation
   external_id: consultation
   service_category_ids:

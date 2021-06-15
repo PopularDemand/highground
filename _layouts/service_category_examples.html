@@ -43,19 +43,27 @@ layout: page
 	        			<div class="col-12 col-md-4 ">
 	        			<div
 	        			  class="example-image-price"
-	        			  style="background-image: url({{ example.image.src }});"
+	        			  style="background-image: url({{ example.image.src }}); height: 200px;"
 	        			>
-	        			  <!-- changes here should be made in .spacer.invisible below -->
-	        			  <div class="overlay" style="height:100px;"></div>
-
-	        			  <!-- necessary for .example-image-price height -->
-	        			  <div class="spacer invisible" style="height:100px;"></div>
 	        			</div>
 
 	        			<!-- CTA -->
 	        			<a class="cta-btn btn btn-tertiary flat" href="{{ example.link }}" target="_blank">View Now ⬈</a>
 	        			</div>
 	        			</div>
+
+	        			{% if example.additional_links %}
+	        				<div class="row">
+	        					<div class="col">
+	        						<p><b>Additional links: </b>
+	        						{% for link in example.additional_links %}
+	        							{% if forloop.index != 1 %}&nbsp;|&nbsp;{% endif %}
+	        							<a href="{{ link.url }}" target="_blank">{{link.title}}</a>
+	        						{% endfor %}
+	        						</p>
+	        					</div>
+	        				</div>
+	        			{% endif %}
 
 	        			{% if example.additional %}
 	        			<div class="row">
