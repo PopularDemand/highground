@@ -27,6 +27,11 @@ layout: page
 	        	{% endfor %}
 	        </div>
 
+	        <div class="row text-center mb-4">
+	        	{% assign showcase_page = site.service_category_examples | where: "service_category_id", page.external_id | first %}
+	        	<p><a href="{{ showcase_page.url }}" class="showcase-link">View a showcase of our {{ page.label }} work</a></p>
+	        </div>
+
 	        <div class="row justify-content-center">
 	            <a class="cta-btn btn btn-tertiary p-3 w-75" data-bs-toggle="modal" data-bs-target="#contact-modal" href="#">
 	            	Contact us to get started today

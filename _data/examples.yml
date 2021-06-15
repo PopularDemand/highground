@@ -1,21 +1,24 @@
-#ccfd
-#ccfd consultation
-- title: Chokolate Chip Family Dolls
+#lovespresents
+#lp instagram
+- title: LovesPresents.com
   service_ids:
-    - wordpress_site
-    - woocommerce_site
+    - shopify_site
     - copywriting
-    - data_entry
-    - consultation
+    - social_media
   service_category_ids:
     - websites
     - ecommerce
     - additional
-  description: Primary website and shop for the Chokolate Chip Family Dolls corporation. A site to sell homemade dolls built with WooCommerce and Wordpress.
-  link: "https://chokolatechipfamily.com/"
+  description: Print-on-Demand ecommerce solution for graphic designers at LovesPresents.com. Includes shop setup, blog management, and graphic design. See our <b><a href="https://design.highground.tech" target="_blank">Design Studio</a></b> for design offerings.
+  link: "https://lovespresents.com"
+  additional_links:
+    - title: Instagram
+      url: https://instagram.com/lovespresents
+    - title: Twitter
+      url: https://twitter.com/lovespresents2
   image:
-    src: /assets/img/ccfd_wordmark_brown.png
-    alt: chokolate chip family dolls wordmark
+    src: /assets/img/lovespresents_embroidery.jpg
+    alt: loves presents embroidered on hat
 
 #alexbradyorg
 - title: alexbrady.org
@@ -50,6 +53,7 @@
     - websites
     - additional
     - communication
+    - ecommerce
   description: Brand website, social media accounts, and e-commerce site for the @iamalexbrady Brand. We provided shop setup, social media setup, copywriting, blog management, and maintenance.
   additional: The Shopify site is no longer online, but viewable in an archived state.
   link: "https://iamalexbrady.com"
@@ -68,27 +72,24 @@
     src: /assets/img/eyes_ab_combo.png
     alt: iamalexbrady brand wordmark
 
-#lovespresents
-#lp instagram
-- title: LovesPresents.com
+#ccfd
+#ccfd consultation
+- title: Chokolate Chip Family Dolls
   service_ids:
-    - shopify_site
+    - wordpress_site
+    - woocommerce_site
     - copywriting
-    - social_media
+    - data_entry
+    - consultation
   service_category_ids:
     - websites
     - ecommerce
     - additional
-  description: Print-on-Demand ecommerce solution for graphic designers at LovesPresents.com. Includes shop setup, blog management, and graphic design. See our <b><a href="https://design.highground.tech" target="_blank">Design Studio</a></b> for design offerings.
-  link: "https://lovespresents.com"
-  additional_links:
-    - title: Instagram
-      url: https://instagram.com/lovespresents
-    - title: Twitter
-      url: https://twitter.com/lovespresents2
+  description: Primary website and shop for the Chokolate Chip Family Dolls corporation. A site to sell homemade dolls built with WooCommerce and Wordpress.
+  link: "https://chokolatechipfamily.com/"
   image:
-    src: /assets/img/lovespresents_embroidery.jpg
-    alt: loves presents embroidered on hat
+    src: /assets/img/ccfd_wordmark_brown.png
+    alt: chokolate chip family dolls wordmark
 
 #hgt
 #designstudio
