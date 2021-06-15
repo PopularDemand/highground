@@ -34,6 +34,9 @@ collections:
   service_categories:
     output: true
     permalink: /portfolio/:title
+  service_category_examples:
+    output: true
+    permalink: /portfolio/:title/examples
 
 
 markdown: kramdown

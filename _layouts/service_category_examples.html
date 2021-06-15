@@ -1,0 +1,35 @@
+---
+layout: page
+---
+
+{% assign service_category = site.service_categories | where: "external_id", page.service_category_id | first %}
+
+<main id="{{ page.id }}">
+	<div class="page-section mb-0">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<h1 class="page-title">
+						{{ page.title }}this is an example page
+					</h1>
+					<p>{{ page.description }}</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="page-section">
+	    <div class="container mb-4">
+	        <div class="mb-4 service-list">
+	        	examples list
+	        </div>
+
+	        <div class="row justify-content-center">
+	            <a class="cta-btn btn btn-tertiary p-3 w-75" data-bs-toggle="modal" data-bs-target="#contact-modal" href="#">
+	            	Contact us to get started today
+	            </a>
+	        </div>
+	    </div>
+	</div>
+
+</main>
