@@ -414,6 +414,8 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
 
 .service-list .service-image-price .price-label { color: white; font-size: 1.25em; }
 
+.showcase-link { font-size: 1.2em; border: 1px solid #ababab; padding: 10px; }
+
 @media (min-width: 767px) { .service-list .service-included { margin-bottom: 0px; } }
 
 .contact-modal .modal-content { border: 0; }
@@ -449,5 +451,21 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
 .page-section > #loves-presents .bg-img { position: relative; }
 
 #loves-presents .social-icon:not(:last-of-type) { margin-right: 20px; }
+
+.examples-list .example-name { font-size: calc(1.4rem + .6vw); }
+
+.examples-list .example-additional { font-size: .8em; font-style: italic; }
+
+.examples-list .example-image-price { background-size: 100%; background-repeat: no-repeat; background-position: center; position: relative; }
+
+.examples-list .example-image-price .overlay { background-color: rgba(0, 0, 0, 0); position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+
+.examples-list .example-image-price .spacer, .examples-list .example-image-price .overlay { padding: 10px; }
+
+.examples-list .example-image-price .example-price { font-size: 1.5em; font-weight: bold; font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'; }
+
+.examples-list .example-image-price .price-label { color: white; font-size: 1.25em; }
+
+@media (min-width: 767px) { .example-list .example-included { margin-bottom: 0px; } }
 
 /*# sourceMappingURL=agency.css.map */
